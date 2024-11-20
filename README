@@ -1,0 +1,36 @@
+TerpPaint -- a Java paint program
+----------------------------------
+
+For Windows
+-----------
+* Compile
+	Double-click on compile -- the shortcut
+* Run
+	Double-click on terppaint.vbs
+* Clean
+	Double-click on clean -- the shortcut
+* Compile junit test
+	Double-click on compile-junit.cmd
+* Run junit test 
+	Double-click on run_junit -- the shortcut
+* Run fault injection
+	Double-click on inject_faults -- the shortcut
+	this injects one fault at a time
+* Instrument code
+	Double-click on run-emma-junit.vbs	
+
+For Linux and OSX
+-----------------
+* Compile
+	bash terppaint.sh compile
+* Run
+	bash terppaint.sh
+* Clean
+	bash terpaint.sh clean
+
+Source code -- src/java
+Scenarios -- docs/scenarios
+Javadocs -- Completed for all methods, Public and Private, except NeuQuant.java (Not our Code)
+Coverage -- testing/junit/coverage/emma (directory is generated automatically after run-emma-junit.vbs is executed)
+
+Enjoy!

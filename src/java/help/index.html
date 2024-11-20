@@ -1,0 +1,2229 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./index_files/filelist.xml">
+<link rel=Edit-Time-Data href="./index_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Trouble Shooting</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>wliu</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>Regina Bento</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>7</o:TotalTime>
+  <o:LastPrinted>2004-05-18T09:04:00Z</o:LastPrinted>
+  <o:Created>2004-05-18T11:34:00Z</o:Created>
+  <o:LastSaved>2004-05-18T11:34:00Z</o:LastSaved>
+  <o:Pages>14</o:Pages>
+  <o:Words>3713</o:Words>
+  <o:Characters>21165</o:Characters>
+  <o:Company>University of Maryland</o:Company>
+  <o:Lines>176</o:Lines>
+  <o:Paragraphs>42</o:Paragraphs>
+  <o:CharactersWithSpaces>25992</o:CharactersWithSpaces>
+  <o:Version>9.2720</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:DrawingGridHorizontalSpacing>0 pt</w:DrawingGridHorizontalSpacing>
+  <w:DrawingGridVerticalSpacing>0 pt</w:DrawingGridVerticalSpacing>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>0</w:DisplayVerticalDrawingGridEvery>
+  <w:UseMarginsForDrawingGridOrigin/>
+  <w:DrawingGridHorizontalOrigin>0 pt</w:DrawingGridHorizontalOrigin>
+  <w:DrawingGridVerticalOrigin>0 pt</w:DrawingGridVerticalOrigin>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+span.SPELLE
+	{mso-spl-e:yes;}
+span.GRAME
+	{mso-gram-e:yes;}
+ /* Font Definitions */
+@font-face
+	{font-family:Times;
+	panose-1:2 2 6 3 5 4 5 2 3 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:536902279 -2147483648 8 0 511 0;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:553679495 -2147483648 8 0 66047 0;}
+@font-face
+	{font-family:"Arial Unicode MS";
+	mso-font-alt:Tahoma;
+	mso-font-charset:128;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-1 -369098753 63 0 4129279 0;}
+@font-face
+	{font-family:\65B0\7D30\660E\9AD4;
+	mso-font-alt:"Times New Roman";
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:0 0 0 0 0 0;}
+@font-face
+	{font-family:"\@Arial Unicode MS";
+	mso-font-charset:128;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-1 -369098753 63 0 4129279 0;}
+@font-face
+	{font-family:StarSymbol;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:auto;
+	mso-font-signature:0 0 0 0 0 0;}
+@font-face
+	{font-family:Albany;
+	mso-font-alt:Arial;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:0 0 0 0 0 0;}
+@font-face
+	{font-family:"HG Mincho Light J";
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 0 0 0 0 0;}
+@font-face
+	{font-family:??;
+	panose-1:0 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-format:other;
+	mso-font-pitch:auto;
+	mso-font-signature:1 135135232 16 0 262144 0;}
+@font-face
+	{font-family:"\@??";
+	panose-1:0 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-format:other;
+	mso-font-pitch:auto;
+	mso-font-signature:1 135135232 16 0 262144 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:\65B0\7D30\660E\9AD4;}
+h1
+	{mso-style-next:Normal;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	mso-list:l2 level1 lfo2;
+	mso-hyphenate:none;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:\65B0\7D30\660E\9AD4;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:0pt;
+	mso-bidi-font-weight:normal;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:\65B0\7D30\660E\9AD4;}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin-right:0in;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:.25in;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:\65B0\7D30\660E\9AD4;}
+p.MsoBodyText2, li.MsoBodyText2, div.MsoBodyText2
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:\65B0\7D30\660E\9AD4;
+	font-weight:bold;}
+p.Heading, li.Heading, div.Heading
+	{mso-style-name:Heading;
+	mso-style-next:"Body Text";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-hyphenate:none;
+	font-size:14.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Albany;
+	mso-fareast-font-family:"HG Mincho Light J";
+	mso-bidi-font-family:"Times New Roman";}
+p.proclabel, li.proclabel, div.proclabel
+	{mso-style-name:proclabel;
+	margin-top:5.0pt;
+	margin-right:0in;
+	margin-bottom:5.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Arial Unicode MS";
+	mso-bidi-font-family:"Times New Roman";}
+p.Normal1, li.Normal1, div.Normal1
+	{mso-style-name:Normal1;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:\65B0\7D30\660E\9AD4;}
+span.NumberingSymbols
+	{mso-style-name:"Numbering Symbols";
+	mso-style-parent:"";}
+span.WW-DefaultParagraphFont
+	{mso-style-name:"WW-Default Paragraph Font";
+	mso-style-parent:"";}
+span.WW8Num8z1
+	{mso-style-name:WW8Num8z1;
+	mso-style-parent:"";
+	mso-ansi-font-size:10.0pt;
+	mso-ascii-font-family:"Courier New";
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";}
+span.BulletSymbols
+	{mso-style-name:"Bullet Symbols";
+	mso-style-parent:"";
+	mso-ansi-font-size:9.0pt;
+	mso-ascii-font-family:StarSymbol;
+	mso-fareast-font-family:StarSymbol;
+	mso-hansi-font-family:StarSymbol;}
+span.RTFNum31
+	{mso-style-name:"RTF_Num 3 1";
+	mso-style-parent:"";}
+span.RTFNum32
+	{mso-style-name:"RTF_Num 3 2";
+	mso-style-parent:"";}
+span.RTFNum33
+	{mso-style-name:"RTF_Num 3 3";
+	mso-style-parent:"";}
+span.RTFNum34
+	{mso-style-name:"RTF_Num 3 4";
+	mso-style-parent:"";}
+span.RTFNum35
+	{mso-style-name:"RTF_Num 3 5";
+	mso-style-parent:"";}
+span.RTFNum36
+	{mso-style-name:"RTF_Num 3 6";
+	mso-style-parent:"";}
+span.RTFNum37
+	{mso-style-name:"RTF_Num 3 7";
+	mso-style-parent:"";}
+span.RTFNum38
+	{mso-style-name:"RTF_Num 3 8";
+	mso-style-parent:"";}
+span.RTFNum39
+	{mso-style-name:"RTF_Num 3 9";
+	mso-style-parent:"";}
+span.RTFNum21
+	{mso-style-name:"RTF_Num 2 1";
+	mso-style-parent:"";}
+span.RTFNum22
+	{mso-style-name:"RTF_Num 2 2";
+	mso-style-parent:"";}
+span.RTFNum23
+	{mso-style-name:"RTF_Num 2 3";
+	mso-style-parent:"";}
+span.RTFNum24
+	{mso-style-name:"RTF_Num 2 4";
+	mso-style-parent:"";}
+span.RTFNum25
+	{mso-style-name:"RTF_Num 2 5";
+	mso-style-parent:"";}
+span.RTFNum26
+	{mso-style-name:"RTF_Num 2 6";
+	mso-style-parent:"";}
+span.RTFNum27
+	{mso-style-name:"RTF_Num 2 7";
+	mso-style-parent:"";}
+span.RTFNum28
+	{mso-style-name:"RTF_Num 2 8";
+	mso-style-parent:"";}
+span.RTFNum29
+	{mso-style-name:"RTF_Num 2 9";
+	mso-style-parent:"";}
+ /* Page Definitions */
+@page
+	{mso-footnote-position:beneath-text;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:.5in .5in .5in .5in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-columns:2 even 0in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+@list l0
+	{mso-list-id:41;
+	mso-list-template-ids:41;
+	mso-list-name:"RTF_Num 3";}
+@list l0:level1
+	{mso-level-number-format:roman-upper;
+	mso-level-suffix:none;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.5in;}
+@list l0:level2
+	{mso-level-number-format:alpha-upper;
+	mso-level-suffix:none;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:1.25in;
+	text-indent:-.5in;}
+@list l0:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-suffix:none;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l0:level4
+	{mso-level-suffix:none;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-suffix:none;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-suffix:none;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l0:level7
+	{mso-level-suffix:none;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-suffix:none;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-suffix:none;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l1
+	{mso-list-id:42;
+	mso-list-template-ids:42;
+	mso-list-name:"RTF_Num 2";}
+@list l1:level1
+	{mso-level-number-format:roman-upper;
+	mso-level-suffix:none;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.5in;}
+@list l1:level2
+	{mso-level-number-format:alpha-upper;
+	mso-level-suffix:none;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-suffix:none;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l1:level4
+	{mso-level-suffix:none;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-suffix:none;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-suffix:none;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l1:level7
+	{mso-level-suffix:none;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-suffix:none;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-suffix:none;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l2
+	{mso-list-id:43;
+	mso-list-template-ids:43;}
+@list l2:level1
+	{mso-level-number-format:none;
+	mso-level-suffix:none;
+	mso-level-text:"";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;}
+@list l2:level2
+	{mso-level-number-format:none;
+	mso-level-suffix:none;
+	mso-level-text:"";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;}
+@list l2:level3
+	{mso-level-number-format:none;
+	mso-level-suffix:none;
+	mso-level-text:"";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;}
+@list l2:level4
+	{mso-level-number-format:none;
+	mso-level-suffix:none;
+	mso-level-text:"";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;}
+@list l2:level5
+	{mso-level-number-format:none;
+	mso-level-suffix:none;
+	mso-level-text:"";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;}
+@list l2:level6
+	{mso-level-number-format:none;
+	mso-level-suffix:none;
+	mso-level-text:"";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;}
+@list l2:level7
+	{mso-level-number-format:none;
+	mso-level-suffix:none;
+	mso-level-text:"";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;}
+@list l2:level8
+	{mso-level-number-format:none;
+	mso-level-suffix:none;
+	mso-level-text:"";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;}
+@list l2:level9
+	{mso-level-number-format:none;
+	mso-level-suffix:none;
+	mso-level-text:"";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;}
+@list l3
+	{mso-list-id:286086858;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1932412350 -273228780 -1763958546 -1186811314 -317413496 -2047052388 1975264920 -490554188 -808143620 -1488923054;}
+@list l4
+	{mso-list-id:1066563486;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-2043803132 -1128525972 -276399552 1367257910 -1737831852 -1421017152 -207028512 1547962870 1753249642 -1524705354;}
+@list l5
+	{mso-list-id:1138767467;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-747632164 -1501163496 -771073370 601935086 1093991880 -1820175408 -704081422 -1644785530 198221020 725126954;}
+@list l5:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l6
+	{mso-list-id:1257327114;
+	mso-list-type:hybrid;
+	mso-list-template-ids:651967848 1160125340 -1195837620 -746321050 -1785935690 1812989776 -244020108 -727280942 242538332 1569229826;}
+@list l7
+	{mso-list-id:1614094119;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1455542382 -2104173220 -1414619286 889085130 221175968 -237996130 1475645816 1139697148 -632531474 121282826;}
+@list l7:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l6:level1 lfo7
+	{mso-level-start-at:2;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1032"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:14.0pt;font-family:Times'>&nbsp;<u><o:p></o:p></u></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:14.0pt;font-family:Times'>&nbsp;<u><o:p></o:p></u></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:14.0pt;font-family:Times'>&nbsp;<u><o:p></o:p></u></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-family:Times'><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
+ coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
+ filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1030" type="#_x0000_t75" style='width:342.75pt;
+ height:270.75pt'>
+ <v:imagedata src="./index_files/image001.jpg" o:title="paint_splash_3"/>
+</v:shape><![endif]--><![if !vml]><img width=457 height=361
+src="./index_files/image001.jpg" v:shapes="_x0000_i1030"><![endif]></span><u><span
+style='font-size:14.0pt;font-family:Times'><o:p></o:p></span></u></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:14.0pt;font-family:Times'>&nbsp;<u><o:p></o:p></u></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:14.0pt;font-family:Times'>&nbsp;<u><o:p></o:p></u></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:14.0pt;font-family:Times'>&nbsp;<u><o:p></o:p></u></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:14.0pt;font-family:Times'>&nbsp;<u><o:p></o:p></u></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:14.0pt;font-family:Times'>&nbsp;<u><o:p></o:p></u></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:14.0pt;font-family:Times'>&nbsp;<u><o:p></o:p></u></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:14.0pt;font-family:Times'>&nbsp;<u><o:p></o:p></u></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:14.0pt;font-family:Times'>&nbsp;<u><o:p></o:p></u></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:14.0pt;font-family:Times'>&nbsp;<u><o:p></o:p></u></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:14.0pt;font-family:Times'>&nbsp;<u><o:p></o:p></u></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:14.0pt;font-family:Times'>&nbsp;<u><o:p></o:p></u></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:14.0pt;font-family:Times'>&nbsp;<u><o:p></o:p></u></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:14.0pt;font-family:Times'>&nbsp;<u><o:p></o:p></u></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:14.0pt;font-family:Times'>&nbsp;<u><o:p></o:p></u></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:14.0pt;font-family:Times'>&nbsp;<u><o:p></o:p></u></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><u><span
+style='font-size:14.0pt;font-family:Times'>User Manual for Java based TerpPaint
+version 3.0</span></u></b><span style='font-size:14.0pt;font-family:Times'><br
+clear=all style='page-break-before:always'>
+&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:14.0pt;font-family:Times'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:14.0pt;font-family:Times'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:14.0pt;font-family:Times'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><u><span
+style='font-size:14.0pt;font-family:Times'>Table of Contents</span></u></b><span
+style='font-size:14.0pt;font-family:Times'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:14.0pt;font-family:Times'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:14.0pt;font-family:Times'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:14.0pt;font-family:Times'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Times'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Installation
+Guidelines..................................................................................3<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Times'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Times'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Quick Start
+Tutorial.....................................................................................3<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Times'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Times'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+References...................................................................................................5<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Times'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Times'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Trouble
+Shooting...…..................................................................................11<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Times'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Times'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Known
+Bugs...............................................................................................11<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Times'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Times'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Index..........................................................................................................12<br
+clear=all style='mso-special-character:line-break;page-break-before:always'>
+<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Times'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;font-family:Times'>Installation
+Guidelines<o:p></o:p></span></p>
+
+<p class=Normal1 align=center style='text-align:center'><span style='font-size:
+14.0pt;font-family:Times'>&nbsp;<o:p></o:p></span></p>
+
+<p class=Normal1 style='margin-left:.75in;text-indent:-.5in'><span
+style='font-family:Times'>Minimum System Requirements:<o:p></o:p></span></p>
+
+<p class=Normal1 style='margin-left:1.25in;text-indent:-.5in'><span
+style='font-family:Times'>3 MB of diskspace<o:p></o:p></span></p>
+
+<p class=Normal1 style='margin-left:1.25in;text-indent:-.5in'><span
+style='font-family:Times'>32 MB RAM<o:p></o:p></span></p>
+
+<p class=Normal1 style='margin-left:1.25in;text-indent:-.5in'><span
+style='font-family:Times'>350MHz CPU<o:p></o:p></span></p>
+
+<p class=Normal1 style='margin-left:1.25in;text-indent:-.5in'><span
+style='font-family:Times'>Java Virtual Machine 1.4.1 or higher<o:p></o:p></span></p>
+
+<p class=Normal1 style='margin-left:.75in;text-indent:-.5in'><span
+style='font-family:Times'>Installation: <o:p></o:p></span></p>
+
+<p class=Normal1 style='margin-left:1.25in;text-indent:-.5in'><span
+style='font-family:Times'>It is assumed that your environmental variable PATH
+is set to include the appropriate Java Virtual Machine.&nbsp; In this case just
+run the batch file (TerpPaint.bat) for Windows, the make file (make) for UNIX,
+and the RunTerpPaint(RunTerpPaint) script for Mac <o:p></o:p></span></p>
+
+<p class=Normal1 style='margin-left:1.25in;text-indent:-.5in'><span
+style='font-family:Times'>If the above method does not work, please do the
+following at the command prompt:<o:p></o:p></span></p>
+
+<p class=Normal1 style='margin-left:1.5in;text-indent:-1.5in'><span
+style='font-family:Times'>Set PATH to include the appropriate Java Virtual
+Machine.&nbsp; For example in Windows, you would do something like<o:p></o:p></span></p>
+
+<p class=Normal1 style='margin-left:1.5in'><i><span style='font-family:Times'>set
+PATH=c:\jdk1.4.1_02\bin;.<o:p></o:p></span></i></p>
+
+<p class=Normal1 style='margin-left:1.5in;text-indent:-1.5in'><span
+style='font-family:Times'>For Windows and UNIX type <i>java TerpPaint <o:p></o:p></i></span></p>
+
+<p class=Normal1 style='margin-left:1.25in;text-indent:-.5in'><span
+style='font-family:Times'>Modifications: if you modified our source code, you
+would have to re-compile to reflect the changes:<o:p></o:p></span></p>
+
+<p class=Normal1 style='margin-left:1.5in;text-indent:-1.5in'><span
+style='font-family:Times'>We did not make any packages to confuse you, but you
+would have to include all the jar files in the <i>classpath</i> when
+compiling.&nbsp;&nbsp; Assuming all the jar files are in the current directory,
+for Windows, you would do something like: <o:p></o:p></span></p>
+
+<p class=Normal1 style='margin-left:99.0pt;text-indent:9.0pt'><i><span
+style='font-family:Times'>set
+CLASSPATH=.\mailapi.jar;.\mail.jar;.\pop3.jar;.\activation.jar;.\stmp.jar;.\imap.jar;.<o:p></o:p></span></i></p>
+
+<p class=Normal1 style='margin-left:99.0pt;text-indent:9.0pt'><i><span
+style='font-family:Times'>javac *.java<o:p></o:p></span></i></p>
+
+<p class=Normal1 style='margin-left:1.5in;text-indent:-1.5in'><span
+style='font-family:Times'>To run TerpPaint after compilation follow the
+instructions given in section B<o:p></o:p></span></p>
+
+<p class=Normal1><span style='font-family:Times'>&nbsp;<o:p></o:p></span></p>
+
+<p class=Normal1><span style='font-family:Times'>&nbsp;<o:p></o:p></span></p>
+
+<p class=Normal1><span style='font-family:Times'>&nbsp;<o:p></o:p></span></p>
+
+<p class=Normal1 align=center style='text-align:center'><span style='font-size:
+14.0pt;font-family:Times'>Tutorial<o:p></o:p></span></p>
+
+<p class=Normal1 align=center style='text-align:center'><span style='font-size:
+14.0pt;font-family:Times'>&nbsp;<o:p></o:p></span></p>
+
+<p class=Normal1 style='margin-left:.75in;text-indent:-.5in'><span
+style='font-family:Times'>Create a New File And Save<o:p></o:p></span></p>
+
+<p class=Normal1 style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:Times'>An initializing window pops up when TerpPaint starts
+running, it looks like:<o:p></o:p></span></p>
+
+<p class=Normal1 style='margin-left:.75in'><span style='font-family:Times'>&nbsp;<o:p></o:p></span></p>
+
+<p class=Normal1 style='margin-left:.75in'><span style='font-family:Times'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1039" type="#_x0000_t75" style='width:357pt;height:281.25pt'>
+ <v:imagedata src="./index_files/image001.jpg" o:title="paint_splash_3"/>
+</v:shape><![endif]--><![if !vml]><img width=476 height=375
+src="./index_files/image001.jpg" v:shapes="_x0000_i1039"><![endif]><o:p></o:p></span></p>
+
+<p class=Normal1><span style='font-family:Times'>&nbsp;<o:p></o:p></span></p>
+
+<p class=Normal1 style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:Times'>After initializing window, TerpPaint should appear on
+your screen<o:p></o:p></span></p>
+
+<p class=Normal1><span style='font-family:Times'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<o:p></o:p></span></p>
+
+<p class=Normal1 style='margin-left:.5in'><!--[if gte vml 1]><v:shape id="_x0000_i1047"
+ type="#_x0000_t75" style='width:372.75pt;height:257.25pt;
+ mso-position-horizontal:absolute;mso-position-vertical:absolute'
+ o:allowoverlap="f" fillcolor="#3cc" strokecolor="white">
+ <v:fill color2="#009" o:detectmouseclick="t"/>
+ <v:stroke o:forcedash="t"/>
+ <v:imagedata src="./index_files/image002.png" o:title=""/>
+ <v:shadow color="#010199"/>
+</v:shape><![endif]--><![if !vml]><img width=497 height=343
+src="./index_files/image003.jpg" v:shapes="_x0000_i1047"><![endif]><span
+style='font-family:Times'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <o:p></o:p></span></p>
+
+<p class=Normal1 style='margin-left:.5in'><span style='font-family:Times'>&nbsp;<o:p></o:p></span></p>
+
+<p class=Normal1 style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:Times'>One may use the toolbars on the left to draw
+different lines or shapes on the canvas.&nbsp; The option box directly beneath
+the toolbar, on the left side directly above the color plates, shows the
+options of the currently selected tool.&nbsp; For example, if the line tool
+were currently selected, the option box would show the different thickness the
+line could have. <o:p></o:p></span></p>
+
+<p class=Normal1 style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:Times'>One may also use the color plates at the bottom (or
+the colors menu, as seen above) to change colors.&nbsp; Right click on the
+color of your choice will set it as the foreground color, and left click will
+set the background color.<o:p></o:p></span></p>
+
+<p class=Normal1 style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:Times'>To save the changes made to the canvas, click the
+File menu, choose Save, then type in the filename you wish to save to and
+select the file type in the popup window.<o:p></o:p></span></p>
+
+<p class=Normal1 style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:Times'>One may use the Layers box, shown in the center of
+the screenshot, to manipulate the layers of the current drawing, adding and
+removing layers, or moving the current layer back and forth, as well as having
+the option to flatten all the layers into one layer.<o:p></o:p></span></p>
+
+<p class=Normal1 style='margin-left:.75in'><span style='font-family:Times'>&nbsp;<o:p></o:p></span></p>
+
+<p class=Normal1 style='margin-left:.75in;text-indent:-.5in'><span
+style='font-family:Times'>Open an Existing File to View<o:p></o:p></span></p>
+
+<p class=Normal1 style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:Times'>Click the File menu and choose open, or use shortcut
+key Ctrl-O (the Ctrl key and the O key at the same time). <o:p></o:p></span></p>
+
+<p class=Normal1 style='margin-left:1.0in;text-indent:-.25in'><span
+style='font-family:Times'>Select file type and the file name of your choice in
+the popup window <o:p></o:p></span></p>
+
+<p class=Normal1 style='margin-left:.5in;text-indent:-.25in'><span
+style='font-family:Times'>You may rotate, stretch, skew, or invert the colors
+of the image by clicking the image menu and choose the appropriate
+option.&nbsp;&nbsp;&nbsp; <o:p></o:p></span></p>
+
+<p class=Normal1 style='margin-left:.5in;text-indent:-.25in'><span
+style='font-family:Times'>To save the changes made to the canvas please see
+part I section E of this tutorial<o:p></o:p></span></p>
+
+<b><span style='font-size:12.0pt;font-family:Times;mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'><br clear=all style='page-break-before:always'>
+</span></b>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span
+style='font-size:14.0pt;font-family:Times'>References<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>&nbsp;<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>To open a new file
+(Ctrl-N)<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Click on <b>New</b> from the <b>File</b> menu.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Times'>Note: A new white canvas
+will be shown.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Times'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>To open an existing file
+(Ctrl-O)<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Click on <b>Open </b>from the <b>File</b> menu. A
+dialogue box will pop up.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Choose the file existing on the dialogue box and
+click <b>OK</b>. The existing file will be open on the current canvas.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Times'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>To save the current file
+(Ctrl-S)<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Click on <b>Save</b> from the <b>File</b> menu. If
+the file has been saved before, the file will be updated automatically. If the
+file has not been saved before, a dialogue box will pop up.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Type the file name that to be saved in the dialogue
+box and click <b>OK</b>.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Times'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>To save to a new location<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Click on <b>Save As …</b> from the <b>File</b> menu.
+A dialogue box will pop up.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Type the file name that to be saved in the dialogue
+box and click <b>OK</b>.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Times'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>To close the current file
+(Alt-F3)<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span style='font-family:Times'><span style="mso-spacerun:
+yes">     </span>Click on <b>Close </b>from the <b>File </b>menu.<span
+style="mso-spacerun: yes">  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>To print preview the
+graphic on the canvas<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span style='font-family:Times'><span style="mso-spacerun:
+yes">     </span>Click on the <b>Print Preview </b>from the <b>File </b>menu.<span
+style="mso-spacerun: yes">  </span>Press <b>Print </b>to print the graphic, and
+<b>Close</b> to exit print preview and <o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:.5in'><span style='font-family:Times'>return
+to the canvas.<o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>To set up the
+specification of the printed page layout<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Click on <b>Page Setup</b> from the <b>File </b>menu.&nbsp;
+The <b>Page Setup</b> dialogue box will pop up.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Modifications can be made in the desired field(s) of
+the dialogue box.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Times'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>To print the graphic on
+the canvas (Ctrl-P)<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Click on <b>Print</b> from the <b>File </b>menu.
+Choose your printer, if applicable, and click <b>OK</b>.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Times'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Note: Please make sure the printer is connected before using <b>Print</b>.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Times'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>To quit the program
+(Alt-F4)<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Click <b>Exit</b> from the <b>File </b>menu. If the
+modified canvas has been saved, the program will exit. If the modified canvas
+has not been saved before, the Save dialogue box will pop up.<span
+style="mso-spacerun: yes">  </span>Choose whether you want to save the changes
+made in the modified canvas.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Times'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>To undo a previous step
+(Ctrl-Z)<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Click <b>Undo</b> from the <b>Edit</b> menu. The
+previous step that has been modified will be recovered.<o:p></o:p></span></p>
+
+<p class=proclabel style='margin:0in;margin-bottom:.0001pt'><span
+style='font-family:Times;mso-fareast-font-family:\65B0\7D30\660E\9AD4'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>To undo multiple steps<o:p></o:p></span></b></p>
+
+<p class=proclabel style='margin:0in;margin-bottom:.0001pt'><span
+style='font-family:Times;mso-fareast-font-family:\65B0\7D30\660E\9AD4'><span
+style="mso-spacerun: yes">     </span>Click <b>Action History to Undo</b> from
+the </span><b><span style='font-family:Times'>Edit</span></b><span
+style='font-family:Times'> menu.<span style="mso-spacerun: yes">  </span>Choose
+the modificaiton that you want to undo.<span style="mso-spacerun: yes"> 
+</span>If you choose a step <o:p></o:p></span></p>
+
+<p class=proclabel style='margin:0in;margin-bottom:.0001pt;text-indent:27.0pt'><span
+style='font-family:Times'>that is multiple steps back in the history, all steps
+after that one will also be undone.</span><b><span style='font-family:Times;
+mso-fareast-font-family:\65B0\7D30\660E\9AD4'><o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>To recover an undone step
+(Ctrl-Y)<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Click <b>Redo</b> from the <b>Edit</b> menu. The
+modification which was undone by <b>Undo</b> will be&nbsp;repeated.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Times'>&nbsp;&nbsp;&nbsp;&nbsp;
+Note: <b>Redo</b> only works when <b>Undo</b> has been used.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Times'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>To cut in the working
+canvas<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Click the <b>Select tool </b>or <b>Free-form Select tool</b>
+from the tool bar.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Click the starting point on the canvas.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Drag to the ending point that you want to be cut.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Click <b>Cut</b> from the <b>Edit </b>menu, or type <b>Ctrl-X</b>.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Times'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Note: The selected part of the canvas will be cut.&nbsp; The cut part will show
+the background color.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Times'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>To copy a selected part
+to the clipboard<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Click <b>Select tool </b>or <b>Free-form Select tool</b>
+from the tool bar.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Click the starting point on the canvas.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Drag to the ending point that you want to be copied.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Click <b>Copy</b> from the <b>Edit</b> menu, or type <b>Ctrl-C</b>.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Times'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Note: The canvas will not be modified. The selected part will be pasted on the
+clipboard.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Times'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>To paste from the
+clipboard<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Click the <b>Paste</b> from the <b>Edit </b>menu. The
+graphic in the clipboard will be placed.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Times'>&nbsp;<span
+style='mso-tab-count:1'>           </span>Note: If nothing in the clipboard,
+nothing will be placed on the canvas.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Times'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>To clear a selected part
+of the working canvas<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Click the <b>Select tool </b>or <b>Free-form Select
+tool</b> from the tool bar.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Click the starting point on the canvas.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Drag to the ending point that you want to be cleared.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Click <b>Clear Selection</b> from the <b>Edit </b>menu,
+or type <b>Delete</b>.<o:p></o:p></span></p>
+
+<p class=proclabel style='margin:0in;margin-bottom:.0001pt'><span
+style='font-family:Times'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Note: The selected part of the canvas will be cleared.&nbsp; The cleared part
+will show the background color.</span><span style='font-family:Times;
+mso-fareast-font-family:\65B0\7D30\660E\9AD4'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Times'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>To select the entire
+canvas<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span style='font-family:Times'><span style="mso-spacerun:
+yes">     </span>Click <b>Select All</b> from the <b>Edit </b>menu, or type <b>Ctrl-A</b>.<o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>To copy to (export) files<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span style='font-family:Times'>&nbsp;&nbsp;&nbsp;&nbsp;
+Select the drawing<b> </b>in the canvas, using the same procedure as copy or
+cut.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Times'>&nbsp;&nbsp;&nbsp;&nbsp;
+Click <b>Copy To</b> from the <b>Edit </b>menu. A dialogue box will pop up.<o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>&nbsp;&nbsp;&nbsp;&nbsp; </span></b><span
+style='font-family:Times'>Type the file name to save the selection to in the
+dialogue box and click <b>OK</b>.<o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>&nbsp;<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>To paste from (import)
+files<o:p></o:p></span></b></p>
+
+<p class=MsoNormal>&nbsp;&nbsp;&nbsp;&nbsp; On the <b>Edit</b> menu, click <b>Paste
+From</b>. <b><span style='font-family:Times'><o:p></o:p></span></b></p>
+
+<p class=MsoNormal>&nbsp;&nbsp;&nbsp;&nbsp; Locate and double-click the bitmap
+file you want to insert. <b><span style='font-family:Times'><o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span style='font-family:Times'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Hold
+down the left mouse button and drag the bitmap where you want it, and then
+click outside the selection. </p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>&nbsp;<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>To set the preferences<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span style='font-family:Times'><span style="mso-spacerun:
+yes">     </span>Click <b>Preferences</b> from the <b>Edit </b>menu, or type <b>Ctrl-J</b>.<span
+style="mso-spacerun: yes">  </span>Change the desired preferences (see the next
+8 references) and <o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:.5in'><span style='font-family:Times'>click
+<b>OK</b>.<o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>To </span>set the undo
+level preference<o:p></o:p></b></p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">     </span>From the <b>Edit</b>
+menu, click <b>Preferences</b>.</p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">     </span>Type the desired
+undo level into the text box under the <b>Undo Level</b> section.</p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">     </span>Click<b> OK</b>.</p>
+
+<p class=MsoNormal><b><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></b></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>To </span>set the
+animation interval preference<o:p></o:p></b></p>
+
+<p class=proclabel style='margin:0in;margin-bottom:.0001pt'><span
+style='font-family:Times;mso-fareast-font-family:\65B0\7D30\660E\9AD4'><span
+style="mso-spacerun: yes">     </span>From </span><span style='font-family:
+"Times New Roman"'>the <b>Edit</b> menu, click <b>Preferences</b>.<o:p></o:p></span></p>
+
+<p class=proclabel style='margin:0in;margin-bottom:.0001pt'><span
+style='font-family:"Times New Roman"'><span style="mso-spacerun: yes">    
+</span>Type the desired animation interval (in Milliseconds) into the text box
+under the <b>Animation Interval</b> section.</span><span style='font-family:
+"Times New Roman";mso-fareast-font-family:\65B0\7D30\660E\9AD4'><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'><span
+style="mso-spacerun: yes">     </span></span></b>Click<b> OK</b>.</p>
+
+<p class=MsoNormal><b><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></b></p>
+
+<h1 style='mso-list:none'><span style='font-family:"Times New Roman";
+mso-bidi-font-weight:bold'>To set the language preference<o:p></o:p></span></h1>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">     </span>From the <b>Edit</b>
+menu, click <b>Preferences</b>.</p>
+
+<p class=MsoNormal><b><span style='font-family:Times'><span
+style="mso-spacerun: yes">     </span></span></b><span style='font-family:Times'>C</span>lick
+the drop-down box under the <b>Language</b> section, then select your desired
+language.</p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">     </span>Click <b>OK</b>.</p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>Note:<span
+style="mso-spacerun: yes">  </span>The Language preference currently has not
+been implemented, so the language of the program is always English, </p>
+
+<p class=MsoNormal style='text-indent:.5in'>independent of the preference
+indicated.<span style='font-family:Times'><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>To set the</span>
+animation transitions preference<o:p></o:p></b></p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">     </span>From the <b>Edit</b>
+menu, click <b>Preferences</b>.</p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">     </span>Click the
+drop-down box under the <b>Transitions</b> section, then select your desired
+transition effect.</p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">     </span>Click <b>OK</b>.</p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>Note:<span
+style="mso-spacerun: yes">  </span>Currently, only the blur transition is
+available, or no transition.</p>
+
+<p class=MsoNormal><b><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></b></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>To </span>set the number
+of loops for animation<o:p></o:p></b></p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">     </span>From the <b>Edit</b>
+menu, click <b>Preferences</b>.</p>
+
+<p class=Normal1><span style='font-family:Times'><span style="mso-spacerun:
+yes">     </span>T</span>ype the desired number of loops in the text box under
+the <b>Transitions</b> section, using –1 for continuous looping.<span
+style='font-family:Times'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">     </span>Click <b>OK</b>.</p>
+
+<p class=MsoNormal><b><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></b></p>
+
+<p class=MsoNormal><b>To set the Paste/Import To location preference</b><b><span
+style='font-family:Times'><o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">     </span>From the <b>Edit</b>
+menu, click <b>Preferences</b>.</p>
+
+<p class=proclabel style='margin:0in;margin-bottom:.0001pt'><span
+style='font-family:Times;mso-fareast-font-family:\65B0\7D30\660E\9AD4'><span
+style="mso-spacerun: yes">     </span>C</span><span style='font-family:"Times New Roman"'>lick
+the radio button corresponding to your preference under the <b>Paste/Import To</b>
+section.<o:p></o:p></span></p>
+
+<p class=proclabel style='margin:0in;margin-bottom:.0001pt'><span
+style='font-family:"Times New Roman"'><span style='mso-tab-count:1'>            </span>(Options
+are: <b>Current Layer</b>, <b>New Layer</b>, <b>New File and Window</b>, and <b>New
+File</b>)<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">     </span>Click <b>OK</b>.<b><o:p></o:p></b></p>
+
+<p class=proclabel style='margin:0in;margin-bottom:.0001pt'><b><span
+style='font-family:"Times New Roman";mso-fareast-font-family:\65B0\7D30\660E\9AD4'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>To </span>set the file
+creation preference on Paste To a File<o:p></o:p></b></p>
+
+<p class=MsoNormal><b><span style="mso-spacerun: yes">     </span></b>From the <b>Edit</b>
+menu, click <b>Preferences</b>.</p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">     </span>Click the radio
+button for either <b>by Creating the File </b>or <b>Only if it Exists</b> from
+the <b>Paste To A File</b> section.</p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">     </span>Click <b>OK</b>.</p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>Note:<span
+style="mso-spacerun: yes">  </span>This option is only available if <b>New File
+and Window</b> or <b>New File</b> option is selected in the <b>Paste/Import To</b>
+</p>
+
+<p class=MsoNormal style='text-indent:.5in'>section.</p>
+
+<p class=MsoNormal style='text-indent:.5in'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<h1 style='mso-list:none'><span style='font-family:"Times New Roman";
+mso-bidi-font-weight:bold'>To </span><span style='font-family:"Times New Roman"'>set
+the starting size when a new file is opened<o:p></o:p></span></h1>
+
+<p class=MsoNormal><b><span style="mso-spacerun: yes">     </span></b>From the <b>Edit</b>
+menu, click <b>Preferences</b>.</p>
+
+<p class=MsoNormal><b><span style="mso-spacerun: yes">     </span></b>Click the
+radio button for <b>Last Size</b>, <b>Prompt</b>, or <b>Fixed Size</b> from the
+<b>When creating a new file use:</b> section.</p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">     </span>If you chose <b>Fixed
+Size</b>, input the width and height in the provided text boxes.</p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">     </span>Click <b>OK</b>.<b><o:p></o:p></b></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>To choose color from
+color palette<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Click the tool from the tool bar with the color you
+want to choose.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Use left click to pick the left button color
+(foreground) on the palette.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Use right click to pick the right button color (background)
+on the palette.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Times'>Note:
+Left button color will be shown on the left side of bigger box. Right button
+will be shown on the right side of the bigger box.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Times'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>To stretch or skew an
+item<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Click on <b>Image</b> from the menu bar.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Click on <b>Stretch/skew </b>function.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>In the <b>Stretch/skew</b> window under <b>Stretch</b>,
+type a percentage amount to stretch your picture horizontally or vertically. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Under <b>Skew</b>, type the number of degrees to skew
+your picture horizontally or vertically. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Click <b>OK</b> to apply changes or <b>Cancel</b> to
+cancel changes.<o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>&nbsp;<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>To flip or rotate a
+picture or object<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Click on <b>Image</b> from the menu bar.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Click on <b>Flip/Rotate</b> function.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>In the <b>Flip/Rotate</b> options menu, specify to
+flip the image horizontally or vertical, or to rotate the image by 90 degrees,
+180 degrees, or 270 degrees. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Click <b>OK</b> to apply changes or <b>Cancel</b> to
+cancel changes.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Times'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>To access help menu<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:14.2pt'><span style='font-family:Times'>Click
+on <b>HelpTopic</b> from the menu bar.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Times'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>To Modify the Attributes
+using the Attributes Menu selection<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span style='font-family:Times'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Convert a color image to a black and white image.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:56.7pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Click on Image from the Menu bar.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:56.7pt;text-indent:-14.15pt'><span
+style='font-family:Times'>On the Image Menu, Click Attributes.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:56.7pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Under Colors, Click Black and white.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:56.7pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Click <b>OK</b> to apply changes or <b>Cancel</b> to
+cancel changes.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Times'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+style="mso-spacerun: yes">   </span>Once a change to Black and White operation
+has been performed, Switching back to color can only be achieved by <o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:.5in'><span style='font-family:Times'><span
+style="mso-spacerun: yes">  </span>creating a new
+image.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Change the size of the image.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:56.7pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Click on <b>Image</b> from the Menu bar.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:56.7pt;text-indent:-14.15pt'><span
+style='font-family:Times'>On the Image menu, select <b>Attributes</b>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:56.7pt;text-indent:-14.15pt'><span
+style='font-family:Times'>In the <b>Attributes</b> window, click on the Units
+you would like to use.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:56.7pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Type in the measurements of the new image size.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:56.7pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Click <b>OK</b> to apply changes or <b>Cancel</b> to
+cancel changes.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:56.7pt'><span style='font-family:Times'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Times'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+There is a difference between resizing the canvas or the drawing area and
+resizing the image.&nbsp; When resizing the<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:.5in'><span style='font-family:Times'>canvas,
+the existing image is left unmodified, only the drawing area is increased. The
+color of the lengthened area is the<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:.5in'><span style='font-family:Times'>user-designated
+background at that moment.&nbsp; To resize the canvas, click and drag the lower
+right hand corner of the<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:.5in'><span style='font-family:Times'>image.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Times'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Times'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Resizing the image function is equivalent of a scaling function.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Times'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>Selecting the Draw Opaque
+attribute<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Click on Image from the Menu bar.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Check the Draw Opaque box to select the draw opaque
+function.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Times'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+While the Opaque attribute is selected, when using the selection tool and
+pasting or moving an area of a selected <o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:.5in'><span style='font-family:Times'>image,
+the area to which the selected region is moved to gets overwritten by the new
+selection.&nbsp; The selected area is <o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:.5in'><span style='font-family:Times'>layered
+over the existing area where it can no longer be seen.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Times'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Times'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+When the Opaque attribute is not selected, when pasting or moving an area of a
+selected image using the selection<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:.5in'><span style='font-family:Times'>tool,
+the selected area is transparent.&nbsp; When placed over an existing drawing
+area, the new selected layer will be seen <o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:.5in'><span style='font-family:Times'>transparent,
+showing the lower existing layer(s). <o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>&nbsp;<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>Inverting the colors of
+an image<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Click on <b>Image</b> from the menu bar.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Select <b>Invert Colors</b> from the menu.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Times'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+The Invert colors tool inverts the colors of everything on the image.&nbsp;
+This is true to both color and grayscale image.&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:.5in'><span style='font-family:Times'>A grayscale
+image will have all the colors inverted toward its equivalent opposing
+grayscale.<o:p></o:p></span></p>
+
+<h1 style='mso-list:none'><span style='font-family:Times;mso-bidi-font-weight:
+bold'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></h1>
+
+<h1 style='mso-list:none'><span style='font-family:"Times New Roman";
+mso-bidi-font-weight:bold'>To apply image filters<o:p></o:p></span></h1>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">     </span>Select the
+region, if not the whole image, to which the filter will be applied.</p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">     </span>On the <b>Filter
+</b>menu, click the desired filter <b>(Brightness, Blur, Sharpen, Emboss, </b>or
+<b>Edge)</b>.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<h1 style='mso-list:none'><span style='font-family:Times;mso-bidi-font-weight:
+bold'>Choosing a Custom Color from the menu option<o:p></o:p></span></h1>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Click on Colors from the menu bar.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Select Edit Colors.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Inside the Edit Colors windows, specified the
+preferred color by clicking on the color swatch.&nbsp; Three different Color
+spectrum pallets can be select from tabs.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Click <b>OK</b> to apply changes or <b>Cancel</b> to
+cancel changes.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>The primary color will now become the color you have
+selected from the custom color window.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Times'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Note: Customized colors can also be selected by double clicking the color
+swatches from the bottom color tool bar.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:.5in'><span style='font-family:Times'>The
+customize color window will show when double clicking the swatch.<o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>&nbsp;<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>To Free Form Select an
+area<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Click on <b>Free Form Select</b> from the tool box.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Click and drag the mouse from your first corner to
+each vertex of the shape.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Every time your mouse changes direction, a point will
+be recorded as a vertex.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Click on the area and drag to move the selected part
+of the image.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>If <b>Draw Opaque</b>, in the <b>Image</b> menu, is
+selected, the background color will be transparent in the selection.<o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>&nbsp;<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>To Select a rectangular
+area<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Click on <b>Select</b> from the tool box.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Click and drag the mouse.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Release the mouse to complete the rectangle.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Click on the area and drag to move the selected part
+of the image.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>If <b>Draw Opaque</b>, in the <b>Image menu</b>, is
+selected, the background color will be transparent in the selection.<o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></b></p>
+
+<p class=MsoBodyText2>To select an area of a single color (Magic Wand Tool)</p>
+
+<p class=MsoNormal><span style='font-family:Times'><span style="mso-spacerun:
+yes">     </span>I</span>n the toolbox, click the <b>Magic Wand </b>tool.</p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">     </span>Click or
+right-click the area or object within the color you want to select.<span
+style='font-family:Times'><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'><span
+style="mso-spacerun: yes">     </span></span></b><span style='font-family:Times'>W</span>ait
+patiently, as this can take a long time, depending on how big the region of
+adjacent color is.<b><span style='font-family:Times'><o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>&nbsp;<o:p></o:p></span></b></p>
+
+<h1 style='mso-list:none'><span style='font-family:Times;mso-bidi-font-weight:
+bold'>To move a selected area<o:p></o:p></span></h1>
+
+<p class=MsoNormal><span style='font-family:Times'><span style="mso-spacerun:
+yes">     </span>Select the area using one of the techniques above.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Times'><span style="mso-spacerun:
+yes">     </span>Click within the selection, and drag it to where you want it
+to be.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Times'><span style='mso-tab-count:
+1'>            </span>Note:<span style="mso-spacerun: yes">  </span>This is
+similar to doing a cut-paste-move.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Times'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<h1 style='mso-list:none'><span style='font-family:Times;mso-bidi-font-weight:
+bold'>To copy-move a selected area<o:p></o:p></span></h1>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">     </span>Select the area
+using one of the techniques above.</p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">     </span>Right-click
+within the selection, and drag the copy to where you want it to be.</p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>Note:<span
+style="mso-spacerun: yes">  </span>This is similar to doing a copy-paste-move.</p>
+
+<p class=MsoNormal><b><span style='font-family:Times'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>To Erase<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Click on <b>Erase</b> from the tool box.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Click and drag over the area to be erased.&nbsp; If a
+left click is used, the background color will be used.&nbsp; If a right click
+is used the foreground color will be used.<o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>&nbsp;<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>To Fill an area<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Click on <b>Fill</b> from the tool box.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Click on an area of the image and all adjacent, same
+color pixels will be filled as well as all other same color pixels adjacent to
+one that has been filled. If a left click is used, the foreground color will be
+used. If a right click is used, the background color will be used.<o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>&nbsp;<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>To obtain a color from an
+image<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Click on <b>Dropper</b> from the tool box.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Click on the color you want to select. If a left
+click is used, the color selected will become the foreground color.&nbsp; If a
+right click is used, the color selected will become the background color.<o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>&nbsp;<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>To Zoom on the image<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Click on <b>Zoom</b> in the tool box<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Left click on the image to enlarge the viewing area.&nbsp;
+Right click on the image to reduce the viewing area.&nbsp; Or left click on the
+zoom choices in the tool box.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt'><b><span style='font-family:
+Times'>Or<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Click on<b> Zoom</b> in the <b>View</b> menu<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Chose <b>Normal</b> for <b>1x</b> or <b>Large</b> for
+<b>6x<o:p></o:p></b></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt'><span style='font-family:Times'>Note:
+Zooming will only be carried out to<b>1x</b>, <b>2x</b>, <b>6x</b> and <b>8x</b>.<o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>&nbsp;<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>To draw<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Click on <b>Pencil</b> in the tool box<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Click and drag where you would like the pencil to
+draw.&nbsp; A left mouse click will draw with the foreground color.&nbsp; A
+right mouse click will draw with the background color.<o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>&nbsp;<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>To paint<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Click on <b>Paint</b> in the tool box<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Choose a brush from the bottom of the tool box or use
+the large circle which is the default until another is selected.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Click and drag where you would like to paint.&nbsp; A
+left mouse click will paint with the foreground color.&nbsp; A right mouse
+click will paint with the background color.<o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>&nbsp;<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>To spray-paint<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Click on <b>Spray-Paint</b> in the tool box<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Choose a spray-nozzle from the bottom of the tool box
+or use the large circle which is the default until another is selected.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Click and drag where you would like to
+spray-paint.&nbsp; A left mouse click will spray-paint with the foreground
+color.&nbsp; A right mouse click will spray-paint with the background color.<o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>&nbsp;<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>To write text<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Click on <b>Text</b> in the tool box<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Click on the image where you will want your text to
+start.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>A dialogue will appear; put your text in the input
+field.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Select underline to create underlined text. Select
+bold to create bold text. Select italics to create italicized text.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Chose a font and a font size from the respective drop
+down boxes if the defaults are not sufficient.<o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>&nbsp;<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>To draw a straight line<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Click on <b>Straight-Line</b> in the tool box.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Choose a thickness from the bottom of the tool box or
+use the thin line which is the default until another is selected.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Click and drag from the beginning of your line,
+release at the end-point of your line.&nbsp; A left mouse click will draw with
+the foreground color.&nbsp; A right mouse click will draw with the background
+color.<o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>&nbsp;<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>To draw a curved line<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Click on <b>Curved-Line</b> in the tool box.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Choose a thickness from the bottom of the tool box or
+use the thin line which is the default until another is selected.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Click and drag from the beginning of your line,
+release at the end-point of your line.&nbsp; A left mouse click will draw with
+the foreground color.&nbsp; A right mouse click will draw with the background
+color.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Click on the image with the same mouse button to
+curve the line once.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Click at a second point to curve the line towards the
+new point.<o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>&nbsp;<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>To draw a rectangle<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Click on <b>Rectangle</b> in the tool box<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Choose a format from the bottom of the tool box ,
+either the default of a transparent rectangle with a border, a rectangle filled
+with the opposite color and a border of the current color(see next step), or a
+rectangle filled with the current color and a border of the current color.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Click and drag the mouse.&nbsp; If a left click used,
+the foreground color is the current color and the background color is the
+opposite color.&nbsp; If a right click is used, the background color is the
+current color and the foreground color is the opposite color.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Release the mouse to create the rectangle.<o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>&nbsp;<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>To create a polygon<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Click on <b>Polygon</b> in the tool box.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Choose a format from the bottom of the tool box ,
+either the default of a transparent polygon with a border, a polygon filled
+with the opposite color and a border of the current color(see next step), or a
+polygon filled with the current color and a border of the current color.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Click and drag the mouse.&nbsp; If a left click used,
+the foreground color is the current color and the background color is the
+opposite color.&nbsp; If a right click is used, the background color is the
+current color and the foreground color is the opposite color.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Click with the same mouse button to choose the other
+vertexes of the polygon, repeat as desired.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Click on the tool box to complete the polygon.&nbsp;
+A side will be drawn from the last point to the start point.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Times'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>To draw an ellipse<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Click on <b>Ellipse</b> in the tool box.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Choose a format from the bottom of the tool box,
+either the default of a transparent ellipse with a border, an ellipse filled
+with the opposite color and a border of the current color(see next step), or an
+ellipse filled with the current color and a border of the current color.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Click and drag the mouse.&nbsp; If a left click used,
+the foreground color is the current color and the background color is the
+opposite color.&nbsp; If a right click is used, the background color is the
+current color and the foreground color is the opposite color.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Release the mouse to create the ellipse.<o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>&nbsp;<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>To draw a rounded
+rectangle<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Click on <b>Rounded Rectangle</b> in the tool box.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Choose a format from the bottom of the tool box,
+either the default of a transparent rectangle with a border, a rectangle filled
+with the opposite color and a border of the current color(see next step), or a
+rectangle filled with the current color and a border of the current color.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Click and drag the mouse.&nbsp; If a left click used,
+the foreground color is the current color and the background color is the
+opposite color.&nbsp; If a right click is used, the background color is the
+current color and the foreground color is the opposite color.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Release the mouse to create the rectangle.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Times'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>To access recent files<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>&nbsp;&nbsp;&nbsp; </span></b><span
+style='font-family:Times'>Click on <b>file</b> and the recent files will appear
+at the bottom of the pull down menu.<b><o:p></o:p></b></span></p>
+
+<p class=MsoNormal><span style='font-family:Times'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>To access slideshow
+feature<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span style='font-family:Times'>&nbsp;&nbsp;&nbsp;&nbsp;Click
+on the <b>Slideshow</b> in the menu bar. A dialog box will pop up.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Times'>&nbsp;&nbsp;&nbsp;&nbsp;Select
+the folder which has the pictures and click <b>OK</b>.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Times'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-family:Times'>T</span>o add a layer</b></p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">     </span>In the LayerBox,
+click <b>Add</b> under the <b>Functions</b> section.</p>
+
+<p class=MsoNormal>-or-</p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">     </span>From the <b>Edit</b>
+menu, click <b>Layer -&gt; Add Layer</b>.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><b>To view an animation of the layers<o:p></o:p></b></p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">     </span>From the <b>View</b>
+menu, click <b>Animation</b>.</p>
+
+<p class=MsoNormal><b><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></b></p>
+
+<p class=MsoNormal><b>To change the name of a layer<o:p></o:p></b></p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">     </span>In the LayerBox,
+click <b>Change Name</b> next to the layer you want to rename.</p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">     </span>Type in the new
+layer name, and press <b>OK</b>.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><b>To remove a layer by name<o:p></o:p></b></p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">     </span>In the LayerBox,
+click <b>Remove Layer by Name</b> under the <b>Functions</b> section.</p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">     </span>Type in the name
+of the layer to be removed, and click <b>OK</b>.</p>
+
+<p class=MsoNormal>-or-</p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">     </span>From the <b>Edit</b>
+menu, click <b>Layer -&gt; Remove Layer by Name</b>.</p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">     </span>Type in the name
+of the layer to be removed, and click <b>OK</b>.</p>
+
+<p class=MsoNormal><b><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></b></p>
+
+<h1 style='mso-list:none'><span style='font-family:"Times New Roman";
+mso-bidi-font-weight:bold'>To remove the current layer<o:p></o:p></span></h1>
+
+<p class=MsoNormal><span style='font-family:Times'><span style="mso-spacerun:
+yes">     </span>In</span> the LayerBox, click the radio button next to the
+layer you want to remove, to make it the current layer.</p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">     </span>Click <b>Remove
+Current Layer</b> under the <b>Functions</b> section.</p>
+
+<p class=MsoNormal><b><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></b></p>
+
+<h1 style='mso-list:none'><span style='font-family:"Times New Roman";
+mso-bidi-font-weight:bold'>To flatten the layers<o:p></o:p></span></h1>
+
+<p class=MsoNormal><span style='font-family:Times'><span style="mso-spacerun:
+yes">     </span>I</span>n the LayerBox, click <b>Flatten</b> under the <b>Functions</b>
+section.</p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">     </span>From the <b>Edit</b>
+menu, click <b>Layer -&gt; Flatten Layer</b>.</p>
+
+<p class=MsoNormal><b><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></b></p>
+
+<h1 style='mso-list:none'><span style='font-family:"Times New Roman";
+mso-bidi-font-weight:bold'>To move a layer up<o:p></o:p></span></h1>
+
+<p class=MsoNormal><span style='font-family:Times'><span style="mso-spacerun:
+yes">     </span>In </span>the LayerBox, click the radio button next to the
+layer you want to move, to make it the current layer.</p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">     </span>Click<b> Move UP</b>
+from the <b>Direction</b> section.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<h1 style='mso-list:none'><span style='font-family:"Times New Roman";
+mso-bidi-font-weight:bold'>To move a layer down<o:p></o:p></span></h1>
+
+<p class=MsoNormal><span style='font-family:Times'><span style="mso-spacerun:
+yes">     </span>In </span>the LayerBox, click the radio button next to the
+layer you want to move, to make it the current layer.</p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">     </span>Click<b> Move
+DOWN</b> from the <b>Direction</b> section.</p>
+
+<p class=MsoNormal><b><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></b></p>
+
+<p class=MsoNormal><b>To move a layer to the front<o:p></o:p></b></p>
+
+<p class=MsoNormal><span style='font-family:Times'><span style="mso-spacerun:
+yes">     </span>In </span>the LayerBox, click the radio button next to the
+layer you want to move, to make it the current layer.</p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">     </span>Click<b> Move to
+FRONT</b> from the <b>Direction</b> section.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><b>To move a layer to the back<o:p></o:p></b></p>
+
+<p class=MsoNormal><span style='font-family:Times'><span style="mso-spacerun:
+yes">     </span>In </span>the LayerBox, click the radio button next to the
+layer you want to move, to make it the current layer.</p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">     </span>Click<b> Move to
+BACK</b> from the <b>Direction</b> section.<b><span style='font-family:Times'><o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span
+style='mso-bidi-font-size:12.0pt;font-family:Times;mso-fareast-font-family:
+"Times New Roman"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></b></p>
+
+<b><span style='font-size:12.0pt;font-family:Times;mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'><br clear=all style='page-break-before:always'>
+</span></b>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span
+style='font-size:14.0pt;font-family:Times'>Trouble Shooting<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span style='font-family:Times'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal><i><span style='font-family:Times'>I cannot start TerpPaint.<o:p></o:p></span></i></p>
+
+<p class=MsoNormal><span style='font-family:Times'>Check to make sure that your
+system is using Sun Microsystems® Java® version 1.4.1 or a compatible
+implementation.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Times'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal><i><span style='font-family:Times'>My computer suddenly goes
+off when I am working and I haven’t saved. Will I lose everything?<o:p></o:p></span></i></p>
+
+<p class=MsoNormal><span style='font-family:Times'>No. TerpPaint saves 4 backup
+files periodically. You can retrieve the most current backup file from the
+“images” sub folder of the folder where you were running TerpPaint.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Times'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal><i><span style='font-family:Times'>Can I copy something from
+TerpOffice and paste on TerpPaint?<o:p></o:p></span></i></p>
+
+<p class=MsoNormal><span style='font-family:Times'>Yes.&nbsp; TerpPaint fully
+supports all TerpOffice applications.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Times'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal><i><span style='font-family:Times'>My tool bar on the left
+side has disappeared.<o:p></o:p></span></i></p>
+
+<p class=MsoNormal><span style='font-family:Times'>Make sure use have checked
+the <b>Tool Box</b> option under <b>View</b>.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Times'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal><i><span style='font-family:Times'>The canvas is too small
+for drawing.<o:p></o:p></span></i></p>
+
+<p class=MsoNormal><span style='font-family:Times'>The canvas can be enlarged
+by clicking and dragging the sides or corners of it.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Times'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span
+style='font-size:14.0pt;font-family:Times'>Known Bugs<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Program doesn't remember its state.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>The eraser should have various thicknesses.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Moving selected text should not grab always at the
+center.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Warning should be issued before converting to
+grayscale.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Clearing image should preserve the size.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Creating a new file should re-render the colors if
+they have been converted to grayscale.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Polygon selection and moving should be implemented.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:28.35pt;text-indent:-14.15pt'><span
+style='font-family:Times'>Frequent out of memory errors with zoom tool or large
+regions of Magic Select tool.<o:p></o:p></span></p>
+
+<span style='font-size:12.0pt;font-family:Times;mso-fareast-font-family:"Times New Roman";
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span
+style='font-size:14.0pt;font-family:Times'>Index<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-hyphenate:auto'><span style='mso-bidi-font-size:
+12.0pt;mso-fareast-font-family:"Times New Roman"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal>black and white 7</p>
+
+<p class=MsoNormal>chose color bar 6</p>
+
+<p class=MsoNormal>clear selected 6</p>
+
+<p class=MsoNormal>copy 6</p>
+
+<p class=MsoNormal>curved-line 9</p>
+
+<p class=MsoNormal>custom color 7</p>
+
+<p class=MsoNormal>cut 5</p>
+
+<p class=MsoNormal>dropper 8</p>
+
+<p class=MsoNormal>ellipse 10</p>
+
+<p class=MsoNormal>erase 8</p>
+
+<p class=MsoNormal>exit 5</p>
+
+<p class=MsoNormal>fill 8</p>
+
+<p class=MsoNormal>flip 6</p>
+
+<p class=MsoNormal>free form select 7</p>
+
+<p class=MsoNormal>invert 7</p>
+
+<p class=MsoNormal>mail 5</p>
+
+<p class=MsoNormal>new 5</p>
+
+<p class=MsoNormal>opaque 7</p>
+
+<p class=MsoNormal>open 5</p>
+
+<p class=MsoNormal>paint 8</p>
+
+<p class=MsoNormal>paste 6</p>
+
+<p class=MsoNormal>pencil 8</p>
+
+<p class=MsoNormal>polygon 9</p>
+
+<p class=MsoNormal>print 5</p>
+
+<p class=MsoNormal>rectangle 9</p>
+
+<p class=MsoNormal>redo 5</p>
+
+<p class=MsoNormal>rotate 6</p>
+
+<p class=MsoNormal>rounded rectangle 10</p>
+
+<p class=MsoNormal>save 5</p>
+
+<p class=MsoNormal>save as 5</p>
+
+<p class=MsoNormal>select 8</p>
+
+<p class=MsoNormal>size 7</p>
+
+<p class=MsoNormal>slideshow 11</p>
+
+<p class=MsoNormal>spray-paint 9</p>
+
+<p class=MsoNormal>straight-line 9</p>
+
+<p class=MsoNormal>stretch 6</p>
+
+<p class=MsoNormal>skew 6</p>
+
+<p class=MsoNormal>text 9</p>
+
+<p class=MsoNormal>undo 5</p>
+
+<p class=MsoNormal>zoom 8</p>
+
+<p class=MsoNormal style='mso-hyphenate:auto'><span style='mso-bidi-font-size:
+12.0pt;mso-fareast-font-family:"Times New Roman"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;font-family:Times'>&nbsp;<o:p></o:p></span></b></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>
