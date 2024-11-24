@@ -52,7 +52,6 @@ import javax.swing.JFileChooser;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
-import javax.swing.JFrame;
 import javax.swing.KeyStroke;
 import javax.swing.SwingUtilities;
 
@@ -829,14 +828,16 @@ public class TerpPaint extends javax.swing.JFrame {
 	cordinates = new javax.swing.JLabel();
 
 
-	File1.setText("File");
+//	File1.setText("File");
+	File1.setText("ファイル");
 	File1.addActionListener(new java.awt.event.ActionListener() {
 	    public void actionPerformed(java.awt.event.ActionEvent evt) {
 		File1ActionPerformed(evt);
 	    }
 	});
 
-	New.setText("New");
+//	New.setText("New");
+	New.setText("新規");
 	New.setMnemonic(KeyEvent.VK_N);
 	New.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_N, ActionEvent.CTRL_MASK));
 	New.addActionListener(new java.awt.event.ActionListener() {
@@ -846,7 +847,8 @@ public class TerpPaint extends javax.swing.JFrame {
 	});
 	File1.add(New);
 
-	Open.setText("Open");
+//	Open.setText("Open");
+	Open.setText("開く");
 	Open.setMnemonic(KeyEvent.VK_O);
 	Open.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_O, ActionEvent.CTRL_MASK));
 	Open.addActionListener(new java.awt.event.ActionListener() {
@@ -856,7 +858,8 @@ public class TerpPaint extends javax.swing.JFrame {
 	});
 	File1.add(Open);
 
-	Save.setText("Save");
+//	Save.setText("Save");
+	Save.setText("保存");
 	Save.setMnemonic(KeyEvent.VK_S);
 	Save.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_S, ActionEvent.CTRL_MASK));
 	Save.addActionListener(new java.awt.event.ActionListener() {
@@ -866,7 +869,8 @@ public class TerpPaint extends javax.swing.JFrame {
 	});
 	File1.add(Save);
 
-	SaveAs.setText("Save As...");
+//	SaveAs.setText("Save As...");
+	SaveAs.setText("名前を付けて保存");
 	SaveAs.addActionListener(new java.awt.event.ActionListener() {
 	    public void actionPerformed(java.awt.event.ActionEvent evt) {
 		SaveAsActionPerformed(evt);
@@ -874,7 +878,8 @@ public class TerpPaint extends javax.swing.JFrame {
 	});
 	File1.add(SaveAs);
 	// ming 4.22
-	Close.setText("Close");
+//	Close.setText("Close");
+	Close.setText("閉じる");
 	Close.setMnemonic(KeyEvent.VK_F3);
 	Close.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_F3, ActionEvent.ALT_MASK));
 	Close.addActionListener(new java.awt.event.ActionListener() {
@@ -887,7 +892,8 @@ public class TerpPaint extends javax.swing.JFrame {
 
 	File1.add(jSeparator1);
 
-	PrintPreview.setText("Print Preview");
+//	PrintPreview.setText("Print Preview");
+	PrintPreview.setText("印刷プレビュー");
 	PrintPreview.addActionListener(new java.awt.event.ActionListener() {
 	    public void actionPerformed(java.awt.event.ActionEvent evt) {
 		PrintPreviewActionPerformed(evt);
@@ -895,7 +901,8 @@ public class TerpPaint extends javax.swing.JFrame {
 	});
 	File1.add(PrintPreview);
 
-	PageSetup.setText("Page Setup");
+//	PageSetup.setText("Page Setup");
+	PageSetup.setText("印刷ページ設定");
 	PageSetup.addActionListener(new java.awt.event.ActionListener() {
 	    public void actionPerformed(java.awt.event.ActionEvent evt) {
 		PageSetupActionPerformed(evt);
@@ -903,7 +910,8 @@ public class TerpPaint extends javax.swing.JFrame {
 	});
 	File1.add(PageSetup);
 
-	Print.setText("Print");
+//	Print.setText("Print");
+	Print.setText("印刷");
 	Print.setMnemonic(KeyEvent.VK_P);
 	Print.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_P, ActionEvent.CTRL_MASK));
 	Print.addActionListener(new java.awt.event.ActionListener() {
@@ -1066,7 +1074,8 @@ public class TerpPaint extends javax.swing.JFrame {
 	// ming 4.22 end
 
 
-	Exit.setText("Exit");
+//	Exit.setText("Exit");
+	Exit.setText("終了する");
 	Exit.setMnemonic(KeyEvent.VK_F4);
 	Exit.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_F4, ActionEvent.ALT_MASK));
 	Exit.addActionListener(new java.awt.event.ActionListener() {
@@ -1088,6 +1097,7 @@ public class TerpPaint extends javax.swing.JFrame {
 	menu_container.add(File1);
 
 
+//	Edit.setText("Edit");
 	Edit.setText("編集");
 	Edit.addActionListener(new java.awt.event.ActionListener() {
 	    public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1095,7 +1105,8 @@ public class TerpPaint extends javax.swing.JFrame {
 	    }
 	});
 
-	Undo.setText("Undo");
+//	Undo.setText("Undo");
+	Undo.setText("戻る");
 	Undo.setMnemonic(KeyEvent.VK_Z);
 	Undo.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_Z, ActionEvent.CTRL_MASK));
 	Undo.addActionListener(new java.awt.event.ActionListener() {
@@ -1106,8 +1117,11 @@ public class TerpPaint extends javax.swing.JFrame {
 	});
 
 	Edit.add(Undo);
+	
+	//用途不明のため削除
 	 // ming 5.2
-	UndoList.setText("Action History to Undo");
+//	UndoList.setText("Action History to Undo");
+//	UndoList.setText("元に戻す操作履歴");
 	// ming 5.2 end
 	//Undo.setMnemonic(KeyEvent.VK_Z);
 	//Undo.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_Z, ActionEvent.CTRL_MASK));
@@ -1117,9 +1131,11 @@ public class TerpPaint extends javax.swing.JFrame {
 
 	    }
 	});*/
-	Edit.add(UndoList);
+	//用途不明のため削除
+//	Edit.add(UndoList);
 	// ming
-	Repeat.setText("Redo");
+//	Repeat.setText("Redo");
+	Repeat.setText("進む");
 	Repeat.setMnemonic(KeyEvent.VK_Y);
 	Repeat.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_Y, ActionEvent.CTRL_MASK));
 	Repeat.addActionListener(new java.awt.event.ActionListener() {
@@ -1130,7 +1146,8 @@ public class TerpPaint extends javax.swing.JFrame {
 	Edit.add(Repeat);
 	Edit.add(jSeparator3);
 
-	Cut.setText("Cut");
+//	Cut.setText("Cut");
+	Cut.setText("カット");
 	Cut.setMnemonic(KeyEvent.VK_X);
 	Cut.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_X, ActionEvent.CTRL_MASK));
 	Cut.addActionListener(new java.awt.event.ActionListener() {
@@ -1140,7 +1157,8 @@ public class TerpPaint extends javax.swing.JFrame {
 	});
 	Edit.add(Cut);
 
-	Copy.setText("Copy");
+//	Copy.setText("Copy");
+	Copy.setText("コピー");
 	Copy.setMnemonic(KeyEvent.VK_C);
 	Copy.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_C, ActionEvent.CTRL_MASK));
 	Copy.addActionListener(new java.awt.event.ActionListener() {
@@ -1151,7 +1169,8 @@ public class TerpPaint extends javax.swing.JFrame {
 
 	Edit.add(Copy);
 
-	Paste.setText("Paste");
+//	Paste.setText("Paste");
+	Paste.setText("貼り付け");
 	Paste.setMnemonic(KeyEvent.VK_V);
 	Paste.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_V, ActionEvent.CTRL_MASK));
 	Paste.addActionListener(new java.awt.event.ActionListener() {
@@ -1161,7 +1180,8 @@ public class TerpPaint extends javax.swing.JFrame {
 	});
 	Edit.add(Paste);
 
-	ClearSelection.setText("Clear Selection");
+//	ClearSelection.setText("Clear Selection");
+	ClearSelection.setText("選択部分をクリア");
 	ClearSelection.setMnemonic(KeyEvent.VK_DELETE);
 	ClearSelection.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_DELETE,0));
 	ClearSelection.addActionListener(new ActionListener() {
@@ -1171,7 +1191,8 @@ public class TerpPaint extends javax.swing.JFrame {
 	});
 	Edit.add(ClearSelection);
 
-	SelectAll.setText("Select All");
+//	SelectAll.setText("Select All");
+	SelectAll.setText("全てを選択");
 	SelectAll.setMnemonic(KeyEvent.VK_A);
 	SelectAll.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_A, ActionEvent.CTRL_MASK));
 	SelectAll.addActionListener(new ActionListener() {
@@ -1182,7 +1203,8 @@ public class TerpPaint extends javax.swing.JFrame {
 	Edit.add(SelectAll);
 	Edit.add(jSeparator8);
 
-	Export.setText("Copy To");
+//	Export.setText("Copy To");
+	Export.setText("選択部分を保存");
 	Export.addActionListener(new ActionListener() {
 	    public void actionPerformed(ActionEvent evt) {
 		ExportActionPerformed(evt);
@@ -1190,7 +1212,8 @@ public class TerpPaint extends javax.swing.JFrame {
 	});
 	Edit.add(Export);
 //Istvan phase 5
-	Import.setText("Import");
+//	Import.setText("Import");
+	Import.setText("インポート");
 //End Istvan phase 5
 	Import.addActionListener(new ActionListener() {
 	    public void actionPerformed(ActionEvent evt) {
@@ -1201,7 +1224,8 @@ public class TerpPaint extends javax.swing.JFrame {
 
 	//added
 
-		MyPreferences.setText("Preferences");
+//		MyPreferences.setText("Preferences");
+		MyPreferences.setText("設定");
 		MyPreferences.setMnemonic(KeyEvent.VK_J);
 		MyPreferences.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_J, ActionEvent.CTRL_MASK));
 		MyPreferences.addActionListener(new java.awt.event.ActionListener() {
@@ -1212,8 +1236,10 @@ public class TerpPaint extends javax.swing.JFrame {
 	Edit.add(MyPreferences);
 	//end added
 
-	Layer.setText("Layer");
-	Add.setText("Add Layer");
+//	Layer.setText("Layer");
+	Layer.setText("レイヤー");
+//	Add.setText("Add Layer");
+	Add.setText("レイヤーを追加");
 	Add.addActionListener(new java.awt.event.ActionListener() {
 	    public void actionPerformed(java.awt.event.ActionEvent evt) {
 		AddActionPerformed(evt);
@@ -1222,7 +1248,8 @@ public class TerpPaint extends javax.swing.JFrame {
 	Layer.add(Add);
 
 	// ming 4.27
-	Remove.setText("Remove Layer by Name");
+//	Remove.setText("Remove Layer by Name");
+	Remove.setText("レイヤー名を指定して削除");
 	// ming 4.27 end
 	Remove.addActionListener(new java.awt.event.ActionListener() {
 	    public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1231,7 +1258,8 @@ public class TerpPaint extends javax.swing.JFrame {
 	});
 	Layer.add(Remove);
 
-	Flatten.setText("Flatten Layer");
+//	Flatten.setText("Flatten Layer");
+	Flatten.setText("レイヤーを統合");
 	Flatten.addActionListener(new java.awt.event.ActionListener() {
 	    public void actionPerformed(java.awt.event.ActionEvent evt) {
 		FlattenActionPerformed(evt);
@@ -1249,8 +1277,10 @@ public class TerpPaint extends javax.swing.JFrame {
 
 	menu_container.add(Edit);
 
-	View.setText("View");
-	ToolBox.setText("Tool Box");
+//	View.setText("View");
+	View.setText("表示");
+//	ToolBox.setText("Tool Box");
+	ToolBox.setText("ツールボックス");
 	ToolBox.setMnemonic(KeyEvent.VK_T);
 	ToolBox.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_T, ActionEvent.CTRL_MASK));
 	ToolBox.setSelected(true);
@@ -1261,7 +1291,8 @@ public class TerpPaint extends javax.swing.JFrame {
 	});
 	View.add(ToolBox);
 
-	ColorBox.setText("Color Box");
+//	ColorBox.setText("Color Box");
+	ColorBox.setText("カラーボックス");
 	ColorBox.setMnemonic(KeyEvent.VK_L);
 	ColorBox.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_L, ActionEvent.CTRL_MASK));
 	ColorBox.setSelected(true);
@@ -1272,7 +1303,8 @@ public class TerpPaint extends javax.swing.JFrame {
 	});
 	View.add(ColorBox);
 
-	StatusBox.setText("StatusBox");
+//	StatusBox.setText("StatusBox");
+	StatusBox.setText("カーソル座標");
 	StatusBox.setSelected(true);
 	StatusBox.addActionListener(new java.awt.event.ActionListener() {
 	    public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1281,7 +1313,8 @@ public class TerpPaint extends javax.swing.JFrame {
 	});
 	View.add(StatusBox);
 
-	LayerBox.setText("LayerBox");
+//	LayerBox.setText("LayerBox");
+	LayerBox.setText("レイヤーウィンドウ");
 	LayerBox.setSelected(true);
 	LayerBox.addActionListener(new java.awt.event.ActionListener() {
 	    public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1291,8 +1324,10 @@ public class TerpPaint extends javax.swing.JFrame {
 	View.add(LayerBox);
 	View.add(jSeparator5);
 
-	Zoom.setText("Zoom");
-	Normal.setText("Normal");
+//	Zoom.setText("Zoom");
+	Zoom.setText("拡大・縮小");
+//	Normal.setText("Normal");
+	Normal.setText("通常モード");
 	Normal.addActionListener(new java.awt.event.ActionListener() {
 	    public void actionPerformed(java.awt.event.ActionEvent evt) {
 		NormalActionPerformed(evt);
@@ -1300,7 +1335,8 @@ public class TerpPaint extends javax.swing.JFrame {
 	});
 	Zoom.add(Normal);
 
-	Large.setText("Large");
+//	Large.setText("Large");
+	Large.setText("拡大モード");
 	Large.addActionListener(new java.awt.event.ActionListener() {
 	    public void actionPerformed(java.awt.event.ActionEvent evt) {
 		LargeActionPerformed(evt);
@@ -1309,14 +1345,16 @@ public class TerpPaint extends javax.swing.JFrame {
 	Zoom.add(Large);
 
 	View.add(Zoom);
-	ViewBitmap.setText("View Bitmap");
+//	ViewBitmap.setText("View Bitmap");
+	ViewBitmap.setText("ビットマップ画像を表示");
 	ViewBitmap.addActionListener(new java.awt.event.ActionListener() {
 	    public void actionPerformed(java.awt.event.ActionEvent evt) {
 		ViewBitmapActionPerformed(evt);
 	    }
 	});
 
-	SlideShow.setText("Slide Show");
+//	SlideShow.setText("Slide Show");
+	SlideShow.setText("スライドショー");
 	SlideShow.setMnemonic(KeyEvent.VK_S);
 	SlideShow.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_S, ActionEvent.ALT_MASK));
 	SlideShow.addActionListener(new ActionListener(){
@@ -1329,7 +1367,8 @@ public class TerpPaint extends javax.swing.JFrame {
 
 	View.add(ViewBitmap);
 	//Ronald
-	Animation.setText("Animation");
+//	Animation.setText("Animation");
+	Animation.setText("画像を表示");
 	Animation.addActionListener(new ActionListener(){
 	    public void actionPerformed(ActionEvent evt){
 		AnimationActionPerformed(evt);
@@ -1341,7 +1380,9 @@ public class TerpPaint extends javax.swing.JFrame {
 	menu_container.add(View);
 
 	Image.setText("Image");
-	FlipRotate.setText("Flip/Rotate");
+	Image.setText("画像");
+//	FlipRotate.setText("Flip/Rotate");
+	FlipRotate.setText("反転/回転");
 	FlipRotate.setMnemonic(KeyEvent.VK_R);
 	FlipRotate.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_R, ActionEvent.CTRL_MASK));
 	FlipRotate.addActionListener(new java.awt.event.ActionListener() {
@@ -1351,7 +1392,8 @@ public class TerpPaint extends javax.swing.JFrame {
 	});
 	Image.add(FlipRotate);
 
-	StretchSkew.setText("Stretch/Skew");
+//	StretchSkew.setText("Stretch/Skew");
+	StretchSkew.setText("伸縮/歪み");
 	StretchSkew.setMnemonic(KeyEvent.VK_W);
 	StretchSkew.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_W, ActionEvent.CTRL_MASK));
 	StretchSkew.addActionListener(new java.awt.event.ActionListener() {
@@ -1362,7 +1404,8 @@ public class TerpPaint extends javax.swing.JFrame {
 	Image.add(StretchSkew);
 
 
-	InvertColors.setText("Invert Colors");
+//	InvertColors.setText("Invert Colors");
+	InvertColors.setText("色を反転");
 	InvertColors.setMnemonic(KeyEvent.VK_I);
 	InvertColors.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_I, ActionEvent.CTRL_MASK));
 	InvertColors.addActionListener(new java.awt.event.ActionListener() {
@@ -1372,7 +1415,8 @@ public class TerpPaint extends javax.swing.JFrame {
 	});
 	Image.add(InvertColors);
 
-	Attributes.setText("Attributes");
+//	Attributes.setText("Attributes");
+	Attributes.setText("画像サイズ/距離単位/カラー性質");
 	Attributes.setMnemonic(KeyEvent.VK_E);
 	Attributes.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_E, ActionEvent.CTRL_MASK));
 	Attributes.addActionListener(new java.awt.event.ActionListener() {
@@ -1393,7 +1437,9 @@ public class TerpPaint extends javax.swing.JFrame {
 
 	//	  Image.add(ClearImage);
 
-	DrawOpaque.setText("Draw Opaque");
+//	良く分からない機能
+//	DrawOpaque.setText("Draw Opaque");
+	DrawOpaque.setText("不透明で描画");
 	DrawOpaque.setSelected(true);
 	DrawOpaque.addActionListener(new java.awt.event.ActionListener() {
 	    public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1405,7 +1451,8 @@ public class TerpPaint extends javax.swing.JFrame {
 
 		// ming 4.24
 
-	Brightness.setText("Brightness");
+//	Brightness.setText("Brightness");
+	Brightness.setText("明るさ");
 	Brightness.setMnemonic(KeyEvent.VK_B);
 	Brightness.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_B, ActionEvent.CTRL_MASK));
 	Brightness.addActionListener(new java.awt.event.ActionListener() {
@@ -1415,7 +1462,8 @@ public class TerpPaint extends javax.swing.JFrame {
 	});
 	Filter.add(Brightness);
 
-	Blur.setText("Blur");
+//	Blur.setText("Blur");
+	Blur.setText("ぼかし");
 	Blur.setMnemonic(KeyEvent.VK_L);
 	Blur.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_K, ActionEvent.CTRL_MASK));
 	Blur.addActionListener(new java.awt.event.ActionListener() {
@@ -1425,7 +1473,8 @@ public class TerpPaint extends javax.swing.JFrame {
 	});
 	Filter.add(Blur);
 
-	Sharpen.setText("Sharpen");
+//	Sharpen.setText("Sharpen");
+	Sharpen.setText("輪郭強調");
 	Sharpen.setMnemonic(KeyEvent.VK_H);
 	Sharpen.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_H, ActionEvent.CTRL_MASK));
 	Sharpen.addActionListener(new java.awt.event.ActionListener() {
@@ -1435,7 +1484,8 @@ public class TerpPaint extends javax.swing.JFrame {
 	});
 	Filter.add(Sharpen);
 
-	Emboss.setText("Emboss");
+//	Emboss.setText("Emboss");
+	Emboss.setText("引き伸ばし");
 	Emboss.setMnemonic(KeyEvent.VK_M);
 	Emboss.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_M, ActionEvent.CTRL_MASK));
 	Emboss.addActionListener(new java.awt.event.ActionListener() {
@@ -1444,7 +1494,8 @@ public class TerpPaint extends javax.swing.JFrame {
 	    }
 	});
 	Filter.add(Emboss);
-	Edge.setText("Edge");
+//	Edge.setText("Edge");
+	Edge.setText("エッジ");
 	Edge.setMnemonic(KeyEvent.VK_D);
 	Edge.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_D, ActionEvent.CTRL_MASK));
 	Edge.addActionListener(new java.awt.event.ActionListener() {
@@ -1453,13 +1504,16 @@ public class TerpPaint extends javax.swing.JFrame {
 	    }
 	});
 	Filter.add(Edge);
-	Filter.setText("Filter");
+//	Filter.setText("Filter");
+	Filter.setText("フィルター");
 	menu_container.add(Filter);
 	// ming 4.24 end
 
 
-	Colors.setText("Colors");
-	EditColors.setText("Edit Colors...");
+//	Colors.setText("Colors");
+	Colors.setText("カラー");
+//	EditColors.setText("Edit Colors...");
+	EditColors.setText("色の編集");
 	EditColors.addActionListener(new java.awt.event.ActionListener() {
 	    public void actionPerformed(java.awt.event.ActionEvent evt) {
 		EditColorsActionPerformed(evt, left);
@@ -1468,8 +1522,10 @@ public class TerpPaint extends javax.swing.JFrame {
 	Colors.add(EditColors);
 	menu_container.add(Colors);
 
-	Help.setText("Help");
-	HelpTopics.setText("Help Topics");
+//	Help.setText("Help");
+	Help.setText("ヘルプ");
+//	HelpTopics.setText("Help Topics");
+	HelpTopics.setText("ヘルプトピックス");
 	HelpTopics.addActionListener(new java.awt.event.ActionListener() {
 	    public void actionPerformed(java.awt.event.ActionEvent evt) {
 		HelpTopicsActionPerformed(evt);
@@ -1477,7 +1533,8 @@ public class TerpPaint extends javax.swing.JFrame {
 	});
 	Help.add(HelpTopics);
 
-	About.setText("About Terp Paint");
+//	About.setText("About Terp Paint");
+	About.setText("Terp Paintについて");
 	About.addActionListener(new java.awt.event.ActionListener() {
 	    public void actionPerformed(java.awt.event.ActionEvent evt) {
 		AboutActionPerformed(evt);

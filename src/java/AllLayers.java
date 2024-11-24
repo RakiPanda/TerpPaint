@@ -1,12 +1,22 @@
-import java.io.*;
-import java.lang.*;
-import java.awt.*;
-import javax.swing.*;
-import java.util.*;
-import java.awt.event.*;
-import java.awt.image.*;
-import java.io.*;
-import java.awt.geom.*;
+import java.awt.BorderLayout;
+import java.awt.Dimension;
+import java.awt.GridBagConstraints;
+import java.awt.GridBagLayout;
+import java.awt.Insets;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.WindowEvent;
+import java.awt.image.BufferedImage;
+import java.util.LinkedList;
+import java.util.Vector;
+
+import javax.swing.ButtonGroup;
+import javax.swing.JButton;
+import javax.swing.JDialog;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
 
 /** AllLayers is used to create a GUI toolbox to display layers.
  * It works with all operating systems and hardware.
@@ -32,7 +42,8 @@ public class AllLayers extends JDialog{
 	this.paint = (TerpPaint)parent;
 	center = theCanvas;
 	this.setLocation( (int) this.getLocation().getX()+600, (int) this.getLocation().getY()+430);
-	this.setTitle("Layers");
+//	this.setTitle("Layers");
+	this.setTitle("レイヤー");
 	this.setVisible(true);
 	initComponents();
 	/*FAULT::center=null;*/
@@ -54,32 +65,53 @@ public class AllLayers extends JDialog{
 	topLabels = new JPanel();
 	function = new JPanel();
 	direction = new JPanel();
-	curLabel = new JLabel("Current");
+//	curLabel = new JLabel("Current");
+	curLabel = new JLabel("現在のレイヤー");
 	//visLabel = new JLabel("Visible");
-	NameLabel = new JLabel("Name");
-	add = new JButton("Add");
+//	NameLabel = new JLabel("Name");
+	NameLabel = new JLabel("レイヤー名");
+//	add = new JButton("Add");
+	add = new JButton("レイヤーを追加");
 	// ming 4.27
-	remove = new JButton("Remove Layer by Name");
+//	remove = new JButton("Remove Layer by Name");
+	remove = new JButton("レイヤー名を指定して削除");
 	// ming 4.27 end
-	removeCurrent = new JButton("Remove Current Layer");
-	flatten = new JButton("Flatten");
-	up = new JButton("Move UP");
-	down = new JButton("Move DOWN");
-	front = new JButton("Move to FRONT");
-	bottomMost = new JButton("Move to BACK");
+//	removeCurrent = new JButton("Remove Current Layer");
+	removeCurrent = new JButton("現在のレイヤーを削除");
+//	flatten = new JButton("Flatten");
+	flatten = new JButton("レイヤーを統合");
+//	up = new JButton("Move UP");
+	up = new JButton("上のレイヤーに移動");
+//	down = new JButton("Move DOWN");
+	down = new JButton("下のレイヤーに移動");
+//	front = new JButton("Move to FRONT");
+	front = new JButton("現在のレイヤーを先頭に移動");
+//	bottomMost = new JButton("Move to BACK");
+	bottomMost = new JButton("現在のレイヤーを最後尾に移動");
 	bottom = new JPanel();
 	layout = new JPanel();
+	back.change.setText("名前を変更");
 
 	center.nameList.add(back.Name);
-	removeCurrent.setPreferredSize(new Dimension(170, 25));
-	remove.setPreferredSize(new Dimension(170, 25));
-	add.setPreferredSize(new Dimension(170, 25));
-	flatten.setPreferredSize(new Dimension(170, 25));
+//	日本語化に合わせてサイズを変更
+//	removeCurrent.setPreferredSize(new Dimension(170, 25));
+//	remove.setPreferredSize(new Dimension(170, 25));
+//	add.setPreferredSize(new Dimension(170, 25));
+//	flatten.setPreferredSize(new Dimension(170, 25));
+//
+//	front.setPreferredSize(new Dimension(120, 25));
+//	up.setPreferredSize(new Dimension(120, 25));
+//	down.setPreferredSize(new Dimension(120, 25));
+//	bottomMost.setPreferredSize(new Dimension(120, 25));
+	removeCurrent.setPreferredSize(new Dimension(250, 25));
+	remove.setPreferredSize(new Dimension(250, 25));
+	add.setPreferredSize(new Dimension(250, 25));
+	flatten.setPreferredSize(new Dimension(250, 25));
 
-	front.setPreferredSize(new Dimension(120, 25));
-	up.setPreferredSize(new Dimension(120, 25));
-	down.setPreferredSize(new Dimension(120, 25));
-	bottomMost.setPreferredSize(new Dimension(120, 25));
+	front.setPreferredSize(new Dimension(250, 25));
+	up.setPreferredSize(new Dimension(250, 25));
+	down.setPreferredSize(new Dimension(250, 25));
+	bottomMost.setPreferredSize(new Dimension(250, 25));
 
 	addWindowListener(new java.awt.event.WindowAdapter() {
 	    public void windowClosing(java.awt.event.WindowEvent evt) {
@@ -91,7 +123,8 @@ public class AllLayers extends JDialog{
 	constraints = new GridBagConstraints();
 
 	function.setLayout(new GridBagLayout());
-	function.setBorder(new javax.swing.border.TitledBorder("Functions"));
+//	function.setBorder(new javax.swing.border.TitledBorder("Functions"));
+	function.setBorder(new javax.swing.border.TitledBorder("機能"));
 	//Constraints for the add, remove, flatten buttons
 	constraints.anchor = GridBagConstraints.SOUTHEAST;
 	constraints.gridx = 0;
@@ -135,7 +168,8 @@ public class AllLayers extends JDialog{
 
 
 	direction.setLayout(new GridBagLayout());
-	direction.setBorder(new javax.swing.border.TitledBorder("Direction"));
+//	direction.setBorder(new javax.swing.border.TitledBorder("Direction"));
+	direction.setBorder(new javax.swing.border.TitledBorder("レイヤーの移動"));
 	//Constraints for up and down buttons
 	constraints.anchor = GridBagConstraints.NORTH;
 	constraints.gridx = 0;
@@ -180,7 +214,8 @@ public class AllLayers extends JDialog{
 
 
 	layout.setLayout(new java.awt.BorderLayout());
-	layout.setBorder(new javax.swing.border.TitledBorder("Layers"));
+//	layout.setBorder(new javax.swing.border.TitledBorder("Layers"));
+	layout.setBorder(new javax.swing.border.TitledBorder("レイヤー"));
 	bottom.add(direction, BorderLayout.WEST);
 	bottom.add(function, BorderLayout.EAST);
 	layout.add(bottom, BorderLayout.SOUTH);
@@ -286,6 +321,8 @@ public class AllLayers extends JDialog{
 	temp.current.setSelected(true);
 	//added
 	center.nameList.add(temp.Name);
+	// ボタンのテキストを日本語に設定
+    temp.change.setText("名前を変更");
 
 
 	holder.add(temp);
@@ -437,10 +474,12 @@ public class AllLayers extends JDialog{
 	temp.setLocation( (int) temp.getLocation().getX()+300, (int) temp.getLocation().getY()+300);
 	// ming 4.27
 	temp.setTitle("Remove Layer by name");
+	temp.setTitle("レイヤー名を指定して削除");
 	// ming 4.27 end
 	temp.setVisible(true);
 	JButton ok = new JButton("OK");
-	JButton cancel = new JButton("Cancel");
+//	JButton cancel = new JButton("Cancel");
+	JButton cancel = new JButton("キャンセル");
 	JPanel ok_cancel = new JPanel();
 	ok_cancel.setLayout(new GridBagLayout());
 	GridBagConstraints constraints;
@@ -465,7 +504,8 @@ public class AllLayers extends JDialog{
 	    }
 	});
 
-	JLabel message = new JLabel("Enter Name Of Layer to be Removed");
+//	JLabel message = new JLabel("Enter Name Of Layer to be Removed");
+	JLabel message = new JLabel("削除したいレイヤーの名前を入力してください");
 	area = new JTextField("",20);
 	JPanel info = new JPanel();
 	info.setLayout(new GridBagLayout());
