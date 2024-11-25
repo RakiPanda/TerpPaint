@@ -108,12 +108,14 @@ public class emboss extends javax.swing.JDialog {
 
 		getContentPane().add(ok_cancel, java.awt.BorderLayout.EAST);
 
-		choices.setBorder(new javax.swing.border.TitledBorder("LIGHT"));
+//		choices.setBorder(new javax.swing.border.TitledBorder("LIGHT"));
+		choices.setBorder(new javax.swing.border.TitledBorder("引き伸ばす方向"));
 		choices.setLayout(new java.awt.GridBagLayout());
 		java.awt.GridBagConstraints gridBagConstraints2;
 
 		north.setSelected(true);
-		north.setText("North");
+//		north.setText("North");
+		north.setText("北");
 		outterButtons.add(north);
 		/*
 		 * north.addActionListener(new java.awt.event.ActionListener() { public
@@ -124,7 +126,8 @@ public class emboss extends javax.swing.JDialog {
 		gridBagConstraints2.anchor = java.awt.GridBagConstraints.WEST;
 		choices.add(north, gridBagConstraints2);
 
-		north_west.setText("Northwest");
+//		north_west.setText("Northwest");
+		north_west.setText("北西");
 		outterButtons.add(north_west);
 		/*
 		 * north_west.addActionListener(new java.awt.event.ActionListener() {
@@ -137,7 +140,8 @@ public class emboss extends javax.swing.JDialog {
 		gridBagConstraints2.anchor = java.awt.GridBagConstraints.WEST;
 		choices.add(north_west, gridBagConstraints2);
 
-		west.setText("West");
+//		west.setText("West");
+		west.setText("西");
 		outterButtons.add(west);
 		/*
 		 * west.addActionListener(new java.awt.event.ActionListener() { public
@@ -150,7 +154,8 @@ public class emboss extends javax.swing.JDialog {
 		gridBagConstraints2.anchor = java.awt.GridBagConstraints.WEST;
 		choices.add(west, gridBagConstraints2);
 
-		south_west.setText("Southwest");
+//		south_west.setText("Southwest");
+		south_west.setText("南西");
 		outterButtons.add(south_west);
 		/*
 		 * south_west.addActionListener(new java.awt.event.ActionListener() {
@@ -163,7 +168,8 @@ public class emboss extends javax.swing.JDialog {
 		gridBagConstraints2.anchor = java.awt.GridBagConstraints.WEST;
 		choices.add(south_west, gridBagConstraints2);
 
-		south.setText("South");
+//		south.setText("South");
+		south.setText("南");
 		outterButtons.add(south);
 		/*
 		 * south.addActionListener(new java.awt.event.ActionListener() { public
@@ -177,7 +183,8 @@ public class emboss extends javax.swing.JDialog {
 		gridBagConstraints2.anchor = java.awt.GridBagConstraints.WEST;
 		choices.add(south, gridBagConstraints2);
 
-		south_east.setText("Southeast");
+//		south_east.setText("Southeast");
+		south_east.setText("南東");
 		outterButtons.add(south_east);
 		/*
 		 * south_east.addActionListener(new java.awt.event.ActionListener() {
@@ -190,7 +197,8 @@ public class emboss extends javax.swing.JDialog {
 		gridBagConstraints2.anchor = java.awt.GridBagConstraints.WEST;
 		choices.add(south_east, gridBagConstraints2);
 
-		east.setText("East");
+//		east.setText("East");
+		east.setText("東");
 		outterButtons.add(east);
 		/*
 		 * east.addActionListener(new java.awt.event.ActionListener() { public
@@ -203,7 +211,8 @@ public class emboss extends javax.swing.JDialog {
 		gridBagConstraints2.anchor = java.awt.GridBagConstraints.WEST;
 		choices.add(east, gridBagConstraints2);
 
-		north_east.setText("Northeast");
+//		north_east.setText("Northeast");
+		north_east.setText("北東");
 		outterButtons.add(north_east);
 		/*
 		 * north_east.addActionListener(new java.awt.event.ActionListener() {
