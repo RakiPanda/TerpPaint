@@ -4,10 +4,8 @@
  * Created on March 24, 2003, 3:24 PM
  */
 
-import java.awt.*;
-import java.awt.image.*;
-import java.io.*;
-import java.text.*;
+import java.awt.Toolkit;
+import java.awt.image.BufferedImage;
 
 /**
  * This class set the width and height in pixels, cm, and inch for the canvas.
@@ -160,7 +158,8 @@ public class canvas_size extends javax.swing.JDialog {
 		//	  w = w.valueOf(pixelWidth);
 		//	  h = h.valueOf(pixelHeight);
 
-		setTitle("New");
+//		setTitle("New");
+		setTitle("新規");
 		im.flush();
 
 	}
@@ -407,7 +406,8 @@ public class canvas_size extends javax.swing.JDialog {
 		gridBagConstraints1 = new java.awt.GridBagConstraints();
 		okCancel.add(ok, gridBagConstraints1);
 
-		cancel.setText("CANCEL");
+//		cancel.setText("CANCEL");
+		cancel.setText("キャンセル");
 		cancel.addActionListener(new java.awt.event.ActionListener() {
 			public void actionPerformed(java.awt.event.ActionEvent evt) {
 				cancelActionPerformed(evt);
@@ -427,8 +427,10 @@ public class canvas_size extends javax.swing.JDialog {
 		units.setLayout(new java.awt.GridBagLayout());
 		java.awt.GridBagConstraints gridBagConstraints3;
 
-		units.setBorder(new javax.swing.border.TitledBorder("Units"));
-		inches.setText("Inches");
+//		units.setBorder(new javax.swing.border.TitledBorder("Units"));
+		units.setBorder(new javax.swing.border.TitledBorder("単位"));
+//		inches.setText("Inches");
+		inches.setText("インチ");
 		unitsButtons.add(inches);
 		inches.addActionListener(new java.awt.event.ActionListener() {
 			public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -441,7 +443,8 @@ public class canvas_size extends javax.swing.JDialog {
 		gridBagConstraints3.insets = new java.awt.Insets(0, 0, 0, 10);
 		units.add(inches, gridBagConstraints3);
 
-		cm.setText("Cm");
+//		cm.setText("Cm");
+		cm.setText("cm");
 		unitsButtons.add(cm);
 		cm.addActionListener(new java.awt.event.ActionListener() {
 			public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -454,7 +457,8 @@ public class canvas_size extends javax.swing.JDialog {
 		units.add(cm, gridBagConstraints3);
 
 		pixels.setSelected(true);
-		pixels.setText("Pixels");
+//		pixels.setText("Pixels");
+		pixels.setText("ピクセル");
 		unitsButtons.add(pixels);
 		pixels.addActionListener(new java.awt.event.ActionListener() {
 			public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -508,14 +512,16 @@ public class canvas_size extends javax.swing.JDialog {
 		gridBagConstraints4.gridy = 0;
 		widthHeight.add(heightText, gridBagConstraints4);
 
-		Height.setText("Height");
+//		Height.setText("Height");
+		Height.setText("高さ");
 		gridBagConstraints4 = new java.awt.GridBagConstraints();
 		gridBagConstraints4.gridx = 3;
 		gridBagConstraints4.gridy = 0;
 		gridBagConstraints4.insets = new java.awt.Insets(0, 30, 0, 0);
 		widthHeight.add(Height, gridBagConstraints4);
 
-		Width.setText("Width");
+//		Width.setText("Width");
+		Width.setText("幅");
 		gridBagConstraints4 = new java.awt.GridBagConstraints();
 		gridBagConstraints4.gridx = 0;
 		gridBagConstraints4.gridy = 0;
