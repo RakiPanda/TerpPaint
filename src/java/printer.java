@@ -148,7 +148,8 @@ public class printer implements Printable{
     view.setTitle("TerpPaint - 印刷プレビュー");
 	view.setBackground(java.awt.Color.white);
 	view.setForeground(java.awt.Color.white);
-	view.setName("frame");
+//	view.setName("frame");
+	view.setName("フレーム");
 	view.setSize( 672, 892 );
 
 	view.addWindowListener(new java.awt.event.WindowAdapter() {
