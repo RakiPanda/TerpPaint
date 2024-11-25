@@ -20,25 +20,14 @@
 
  */
 
-import java.awt.*;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.PrintWriter;
+import java.util.Iterator;
+import java.util.Locale;
+import java.util.TreeSet;
 
-import java.awt.event.*;
-
-import java.awt.Toolkit.*;
-
-import java.awt.image.*;
-
-import javax.swing.*;
-
-import javax.swing.event.*;
-
-import javax.swing.colorchooser.*;
-
-import java.io.*;
-
-import java.util.*;
-
-import java.awt.geom.*;
+import javax.swing.JOptionPane;
 
 
 
@@ -260,7 +249,8 @@ public class preferences extends javax.swing.JDialog {
 
 
 
-	cancel.setText("CANCEL");
+//	cancel.setText("CANCEL");
+	cancel.setText("キャンセル");
 
 	cancel.addActionListener(new java.awt.event.ActionListener() {
 
@@ -298,7 +288,10 @@ public class preferences extends javax.swing.JDialog {
 
 
 
-	undo.setBorder(new javax.swing.border.TitledBorder("Undo Level"));
+//	undo.setBorder(new javax.swing.border.TitledBorder("Undo Level"));
+	undo.setBorder(new javax.swing.border.TitledBorder("戻る回数"));
+	
+	undo.setPreferredSize(new java.awt.Dimension(200, 80)); // パネルの幅を広げる
 
 	undoLevel.setColumns(2);
 
@@ -330,7 +323,8 @@ public class preferences extends javax.swing.JDialog {
 
 
 
-	jLabel3.setText("Maximum is 20");
+//	jLabel3.setText("Maximum is 20");
+	jLabel3.setText("最大20");
 
 	gridBagConstraints2 = new java.awt.GridBagConstraints();
 
@@ -348,13 +342,15 @@ public class preferences extends javax.swing.JDialog {
 
 
 
-	pastePrefs.setBorder(new javax.swing.border.TitledBorder("Paste/Import To"));
+//	pastePrefs.setBorder(new javax.swing.border.TitledBorder("Paste/Import To"));
+	pastePrefs.setBorder(new javax.swing.border.TitledBorder("貼り付け/インポート 先"));
 
 		if(thePrefs.ToCurrentLayer)
 
 		toCurrentLayer.setSelected(true);
 
-	toCurrentLayer.setText("Current Layer");
+//	toCurrentLayer.setText("Current Layer");
+	toCurrentLayer.setText("現在のレイヤー");
 
 	pasteOrImportTo.add(toCurrentLayer);
 
@@ -382,7 +378,8 @@ public class preferences extends javax.swing.JDialog {
 
 		toNewLayer.setSelected(true);
 
-	toNewLayer.setText("New Layer");
+//	toNewLayer.setText("New Layer");
+	toNewLayer.setText("新しいレイヤー");
 
 	pasteOrImportTo.add(toNewLayer);
 
@@ -410,7 +407,8 @@ public class preferences extends javax.swing.JDialog {
 
 			toNewFileAndOpen.setSelected(true);
 
-	toNewFileAndOpen.setText("New File and Window");
+//	toNewFileAndOpen.setText("New File and Window");
+	toNewFileAndOpen.setText("新規ファイル");	
 
 	pasteOrImportTo.add(toNewFileAndOpen);
 
@@ -438,7 +436,9 @@ public class preferences extends javax.swing.JDialog {
 
 			toNewFile.setSelected(true);
 
-	toNewFile.setText("New File");
+//	toNewFile.setText("New File");
+	toNewFile.setText("新規ファイルとして保存");
+
 
 	pasteOrImportTo.add(toNewFile);
 
@@ -468,7 +468,8 @@ public class preferences extends javax.swing.JDialog {
 
 		filePrefs.setLayout(new java.awt.GridBagLayout());
 
-	filePrefs.setBorder(new javax.swing.border.TitledBorder("Paste To A File"));
+//	filePrefs.setBorder(new javax.swing.border.TitledBorder("Paste To A File"));
+	filePrefs.setBorder(new javax.swing.border.TitledBorder("ファイルへの貼り付け"));
 
 
 
@@ -476,7 +477,8 @@ public class preferences extends javax.swing.JDialog {
 
 		createNew.setSelected(true);
 
-	createNew.setText("by Creating the File");
+//	createNew.setText("by Creating the File");
+	createNew.setText("ファイルを作成する");
 
 	newFiles.add(createNew);
 
@@ -504,7 +506,8 @@ public class preferences extends javax.swing.JDialog {
 
 		onlyIfExists.setSelected(true);
 
-	onlyIfExists.setText("Only if it Exists");
+//	onlyIfExists.setText("Only if it Exists");
+	onlyIfExists.setText("ファイルが存在する場合のみ");
 
 	newFiles.add(onlyIfExists);
 
@@ -552,7 +555,8 @@ public class preferences extends javax.swing.JDialog {
 
 
 
-	anim.setBorder(new javax.swing.border.TitledBorder("Animation Interval"));
+//	anim.setBorder(new javax.swing.border.TitledBorder("Animation Interval"));
+	anim.setBorder(new javax.swing.border.TitledBorder("アニメーション間隔"));
 
 	animInterval.setColumns(4);
 
@@ -582,7 +586,8 @@ public class preferences extends javax.swing.JDialog {
 
 
 
-	jLabel2.setText("Enter in Milliseconds");
+//	jLabel2.setText("Enter in Milliseconds");
+	jLabel2.setText("ミリ秒単位で入力してください");
 
 		gridBagConstraints2 = new java.awt.GridBagConstraints();
 
@@ -610,7 +615,8 @@ public class preferences extends javax.swing.JDialog {
 
 	lang.setLayout(new java.awt.BorderLayout());
 
-	lang.setBorder(new javax.swing.border.TitledBorder("Language"));
+//	lang.setBorder(new javax.swing.border.TitledBorder("Language"));
+	lang.setBorder(new javax.swing.border.TitledBorder("言語"));
 
 	lang.add(langs, java.awt.BorderLayout.CENTER);
 
@@ -631,7 +637,8 @@ public class preferences extends javax.swing.JDialog {
 
 	tran.setLayout(new java.awt.BorderLayout());
 
-	tran.setBorder(new javax.swing.border.TitledBorder("Transitions"));
+//	tran.setBorder(new javax.swing.border.TitledBorder("Transitions"));
+	tran.setBorder(new javax.swing.border.TitledBorder("トランジション"));
 //Istvan phase 5
 	tran.add(trans, java.awt.BorderLayout.WEST);
 
@@ -644,21 +651,23 @@ public class preferences extends javax.swing.JDialog {
 	cycleNumber.addActionListener(new java.awt.event.ActionListener() {
 
 	    public void actionPerformed(java.awt.event.ActionEvent evt) {
-
 		cycleNumberActionPerformed(evt);
 
 	    }
 
 	});
 	tran.add(cycleNumber,java.awt.BorderLayout.EAST);
-	jLabelCycle.setText("Select a Transition and the number of loops");
-		jLabelCycle2.setText("(use -1 for repeated looping)");
+//	jLabelCycle.setText("Select a Transition and the number of loops");
+	jLabelCycle.setText("トランジションとループ回数を選択してください");
+//	jLabelCycle2.setText("(use -1 for repeated looping)");
+	jLabelCycle2.setText("(ループさせるには -1 を使用してください)");
 	tran.add(jLabelCycle,java.awt.BorderLayout.NORTH);
 	tran.add(jLabelCycle2,java.awt.BorderLayout.SOUTH);
 //End Istvan phase 5
 	addTrans();
 	int index=0;
-	if(thePrefs.Transition.compareTo("Blur")==0)
+//	if(thePrefs.Transition.compareTo("Blur")==0)
+	if(thePrefs.Transition.compareTo("ぼかし")==0)
 	    index=1;
 
 	trans.setSelectedIndex(index );
@@ -666,13 +675,15 @@ public class preferences extends javax.swing.JDialog {
 
 	imageAttrib.setLayout(new java.awt.BorderLayout());
 
-		imageAttrib.setBorder(new javax.swing.border.TitledBorder("When creating a new file use:"));
+//		imageAttrib.setBorder(new javax.swing.border.TitledBorder("When creating a new file use:"));
+		imageAttrib.setBorder(new javax.swing.border.TitledBorder("新規ファイルの作成"));
 
 		if(thePrefs.LastSize)
 
 		lastSize.setSelected(true);
 
-	lastSize.setText("Last Size");
+//	lastSize.setText("Last Size");
+	lastSize.setText("最近のサイズ");
 
 	imageSizes.add(lastSize);
 
@@ -694,7 +705,8 @@ public class preferences extends javax.swing.JDialog {
 
 		promptSize.setSelected(true);
 
-	promptSize.setText("Prompt");
+//	promptSize.setText("Prompt");
+	promptSize.setText("プロンプト");
 
 	imageSizes.add(promptSize);
 
@@ -716,7 +728,8 @@ public class preferences extends javax.swing.JDialog {
 
 		fixedSize.setSelected(true);
 
-	fixedSize.setText("Fixed Size");
+//	fixedSize.setText("Fixed Size");
+	fixedSize.setText("固定サイズ");
 
 	imageSizes.add(fixedSize);
 
@@ -744,7 +757,8 @@ public class preferences extends javax.swing.JDialog {
 
 
 
-		jLabel1.setText("Width");
+//		jLabel1.setText("Width");
+		jLabel1.setText("幅");
 
 	widthPanel.add(jLabel1, java.awt.BorderLayout.WEST);
 
@@ -776,7 +790,8 @@ public class preferences extends javax.swing.JDialog {
 
 
 
-		jLabel0.setText("Height");
+//		jLabel0.setText("Height");
+		jLabel0.setText("高さ");
 
 	heightPanel.add(jLabel0, java.awt.BorderLayout.WEST);
 
@@ -864,7 +879,8 @@ public class preferences extends javax.swing.JDialog {
 
 		prefs.setLayout(new java.awt.BorderLayout());
 
-	prefs.setBorder(new javax.swing.border.TitledBorder("Preferences"));
+//	prefs.setBorder(new javax.swing.border.TitledBorder("Preferences"));
+	prefs.setBorder(new javax.swing.border.TitledBorder("設定"));
 
 	prefs.add(top, java.awt.BorderLayout.NORTH);
 
@@ -1076,9 +1092,13 @@ if(!except){
     }
     else{
     	except = false;
-		JOptionPane.showMessageDialog(this,
-			    "Please Enter Correct Format and Reasonable Values",
-			    "Error",
+//		JOptionPane.showMessageDialog(this,
+//			    "Please Enter Correct Format and Reasonable Values",
+//			    "Error",
+//			    JOptionPane.ERROR_MESSAGE);
+    	JOptionPane.showMessageDialog(this,
+			    "正しい値を入力してください",
+			    "エラー",
 			    JOptionPane.ERROR_MESSAGE);
     }
     	
@@ -1378,6 +1398,8 @@ if(!except){
 
 	transitions[0]="(none)";
 	transitions[1]="Blur";
+	transitions[0]="なし";
+	transitions[1]="ぼかし";
 
 	int numTrans=2;
 
