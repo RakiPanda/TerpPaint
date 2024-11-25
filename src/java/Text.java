@@ -237,6 +237,7 @@ OurFont myFont = new OurFont();
 	optionsPanel.setLayout(new java.awt.GridBagLayout());
 	java.awt.GridBagConstraints gridBagConstraints1;
 
+	// サイズのドロップダウンメニュー
 	size.setMaximumRowCount(15);
 	size.addActionListener(new java.awt.event.ActionListener() {
 	    public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -245,56 +246,69 @@ OurFont myFont = new OurFont();
 	});
 
 	gridBagConstraints1 = new java.awt.GridBagConstraints();
-	gridBagConstraints1.gridx = 1;
-	gridBagConstraints1.gridy = 1;
+	gridBagConstraints1.gridx = 0;
+	gridBagConstraints1.gridy = 0;
+	gridBagConstraints1.insets = new java.awt.Insets(5, 5, 5, 5); // 上下左右にスペースを追加
+	gridBagConstraints1.anchor = java.awt.GridBagConstraints.CENTER; // 中央揃え
 	optionsPanel.add(size, gridBagConstraints1);
 
+	// フォントのドロップダウンメニュー
 	families.setMaximumRowCount(15);
 //	  families.setSelectedIndex( letterTool.currentFont );
 	families.addActionListener(new java.awt.event.ActionListener() {
-
-
 	    public void actionPerformed(java.awt.event.ActionEvent evt) {
-
 		familiesActionPerformed(evt);
 	    }
 	});
-
-	gridBagConstraints1 = new java.awt.GridBagConstraints();
-	gridBagConstraints1.gridx = 0;
-	gridBagConstraints1.gridy = 1;
-	optionsPanel.add(families, gridBagConstraints1);
-
-//	bold.setText("bold");
-	bold.setText("太字");
 	gridBagConstraints1 = new java.awt.GridBagConstraints();
 	gridBagConstraints1.gridx = 1;
 	gridBagConstraints1.gridy = 0;
+	gridBagConstraints1.insets = new java.awt.Insets(5, 5, 5, 5);
+	optionsPanel.add(families, gridBagConstraints1);
+
+	// 太字ボタン
+//	bold.setText("bold");
+	bold.setText("太字");
+	gridBagConstraints1 = new java.awt.GridBagConstraints();
+	gridBagConstraints1.gridx = 0;
+	gridBagConstraints1.gridy = 1;
+	gridBagConstraints1.insets = new java.awt.Insets(5, 5, 5, 5);
 	optionsPanel.add(bold, gridBagConstraints1);
 
+	// 斜体ボタン
 //	italics.setText("italics");
 	italics.setText("斜体");
 	gridBagConstraints1 = new java.awt.GridBagConstraints();
+	gridBagConstraints1.gridx = 1;
+	gridBagConstraints1.gridy = 1;
+	gridBagConstraints1.insets = new java.awt.Insets(5, 5, 5, 5);
 	optionsPanel.add(italics, gridBagConstraints1);
 
+	// 下線ボタン
 //	underline.setText("underline");
 	underline.setText("下線");
 	gridBagConstraints1 = new java.awt.GridBagConstraints();
 	gridBagConstraints1.gridx = 0;
-	gridBagConstraints1.gridy = 0;
+	gridBagConstraints1.gridy = 2;
+	gridBagConstraints1.insets = new java.awt.Insets(5, 5, 5, 5);
 	optionsPanel.add(underline, gridBagConstraints1);
 
 	getContentPane().add(optionsPanel, java.awt.BorderLayout.SOUTH);
 
+	// OKボタン
 	Ok.setText("OK"); /*FAULT:: Ok.setText("okk"); */
 	Ok.addActionListener(new java.awt.event.ActionListener() {
 	    public void actionPerformed(java.awt.event.ActionEvent evt) {
 		OkActionPerformed(evt);
 	    }
 	});
+	gridBagConstraints1 = new java.awt.GridBagConstraints();
+	gridBagConstraints1.gridx = 0;
+	gridBagConstraints1.gridy = 3;
+	gridBagConstraints1.insets = new java.awt.Insets(10, 10, 10, 10); // 広めのスペースを確保
+	okPanel.add(Ok, gridBagConstraints1);
 
-	okPanel.add(Ok);
-
+	// キャンセルボタン
 //	Cancel.setText("Cancel");
 	Cancel.setText("キャンセル");
 	Cancel.addActionListener(new java.awt.event.ActionListener() {
@@ -303,8 +317,11 @@ OurFont myFont = new OurFont();
 					dispose();
 	    }
 	});
-
-	okPanel.add(Cancel);
+	gridBagConstraints1 = new java.awt.GridBagConstraints();
+	gridBagConstraints1.gridx = 1;
+	gridBagConstraints1.gridy = 3;
+	gridBagConstraints1.insets = new java.awt.Insets(10, 10, 10, 10);
+	okPanel.add(Cancel, gridBagConstraints1);
 
 
 	getContentPane().add(okPanel, java.awt.BorderLayout.EAST);
