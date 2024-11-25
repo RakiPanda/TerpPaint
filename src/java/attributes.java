@@ -370,7 +370,8 @@ public class attributes extends javax.swing.JDialog {
 		gridBagConstraints1 = new java.awt.GridBagConstraints();
 		okCancel.add(ok, gridBagConstraints1);
 
-		cancel.setText("CANCEL");
+//		cancel.setText("CANCEL");
+		cancel.setText("キャンセル");
 		cancel.addActionListener(new java.awt.event.ActionListener() {
 			public void actionPerformed(java.awt.event.ActionEvent evt) {
 				cancelActionPerformed(evt);
@@ -390,8 +391,10 @@ public class attributes extends javax.swing.JDialog {
 		units.setLayout(new java.awt.GridBagLayout());
 		java.awt.GridBagConstraints gridBagConstraints3;
 
-		units.setBorder(new javax.swing.border.TitledBorder("Units"));
-		inches.setText("Inches");
+//		units.setBorder(new javax.swing.border.TitledBorder("Units"));
+		units.setBorder(new javax.swing.border.TitledBorder("単位"));
+//		inches.setText("Inches");
+		inches.setText("インチ");
 		unitsButtons.add(inches);
 		inches.addActionListener(new java.awt.event.ActionListener() {
 			public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -403,7 +406,8 @@ public class attributes extends javax.swing.JDialog {
 		gridBagConstraints3.insets = new java.awt.Insets(0, 0, 0, 10);
 		units.add(inches, gridBagConstraints3);
 
-		cm.setText("Cm");
+//		cm.setText("Cm");
+		cm.setText("cm");
 		unitsButtons.add(cm);
 		cm.addActionListener(new java.awt.event.ActionListener() {
 			public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -416,7 +420,8 @@ public class attributes extends javax.swing.JDialog {
 		units.add(cm, gridBagConstraints3);
 
 		pixels.setSelected(true);
-		pixels.setText("Pixels");
+//		pixels.setText("Pixels");
+		pixels.setText("ピクセル");
 		unitsButtons.add(pixels);
 		pixels.addActionListener(new java.awt.event.ActionListener() {
 			public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -452,14 +457,16 @@ public class attributes extends javax.swing.JDialog {
 		gridBagConstraints4.gridy = 0;
 		widthHeight.add(heightText, gridBagConstraints4);
 
-		Height.setText("Height");
+//		Height.setText("Height");
+		Height.setText("高さ");
 		gridBagConstraints4 = new java.awt.GridBagConstraints();
 		gridBagConstraints4.gridx = 3;
 		gridBagConstraints4.gridy = 0;
 		gridBagConstraints4.insets = new java.awt.Insets(0, 30, 0, 0);
 		widthHeight.add(Height, gridBagConstraints4);
 
-		Width.setText("Width");
+//		Width.setText("Width");
+		Width.setText("幅");
 		gridBagConstraints4 = new java.awt.GridBagConstraints();
 		gridBagConstraints4.gridx = 0;
 		gridBagConstraints4.gridy = 0;
@@ -474,15 +481,19 @@ public class attributes extends javax.swing.JDialog {
 		color.setLayout(new java.awt.GridBagLayout());
 		java.awt.GridBagConstraints gridBagConstraints5;
 
+//		color.setBorder(new javax.swing.border.TitledBorder(
+//				new javax.swing.border.EtchedBorder(), "Color"));
 		color.setBorder(new javax.swing.border.TitledBorder(
-				new javax.swing.border.EtchedBorder(), "Color"));
-		colorScale.setText("color");
+				new javax.swing.border.EtchedBorder(), "カラー設定"));
+//		colorScale.setText("color");
+		colorScale.setText("カラー");
 		colors.add(colorScale);
 		gridBagConstraints5 = new java.awt.GridBagConstraints();
 		gridBagConstraints5.insets = new java.awt.Insets(0, 0, 0, 10);
 		color.add(colorScale, gridBagConstraints5);
 
-		blackwhite.setText("black and white");
+//		blackwhite.setText("black and white");
+		blackwhite.setText("白黒");
 		colors.add(blackwhite);
 		gridBagConstraints5 = new java.awt.GridBagConstraints();
 		gridBagConstraints5.insets = new java.awt.Insets(0, 10, 0, 0);
@@ -718,9 +729,13 @@ public class attributes extends javax.swing.JDialog {
 		}
 		if(except){
 			except = false;
+//			JOptionPane.showMessageDialog(this,
+//				    "Enter Correct Number ",
+//				    "Error",
+//				    JOptionPane.ERROR_MESSAGE);
 			JOptionPane.showMessageDialog(this,
-				    "Enter Correct Number ",
-				    "Error",
+				    "正しい数値を入力してください",
+				    "エラー",
 				    JOptionPane.ERROR_MESSAGE);
 		}
 		else{
