@@ -120,6 +120,7 @@ public class attributes extends javax.swing.JDialog {
 
 	public attributes(java.awt.Frame parent, boolean modal) {
 		super(parent, modal);
+		this.setTitle("画像サイズ/距離単位/カラー性質"); // 日本語のタイトル
 		initComponents();
 		im = ((TerpPaint) this.getParent()).center.getBufferedImage();
 
