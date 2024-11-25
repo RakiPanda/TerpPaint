@@ -11,32 +11,14 @@
  */
 // ming 4.26
 
-import java.lang.*;
-import java.awt.*;
-import java.awt.event.*;
-import java.awt.Toolkit.*;
-import java.awt.Image.*;
-import java.util.*;
-import javax.swing.*;
-import javax.swing.event.*;
-import javax.swing.colorchooser.*;
-import java.io.*;
-import java.awt.image.*;
-import java.awt.print.*;
-import java.awt.datatransfer.Clipboard.*;
-import java.awt.datatransfer.*;
-import com.sun.image.codec.jpeg.*;
-import java.applet.*;
 // ming 4.26 end
-import java.awt.*;
-import java.awt.event.*;
-import java.awt.Toolkit.*;
-import java.awt.image.*;
-import javax.swing.*;
-import javax.swing.event.*;
-import javax.swing.colorchooser.*;
-import java.io.*;
-import java.awt.geom.*;
+import java.awt.Graphics2D;
+import java.awt.RenderingHints;
+import java.awt.image.BufferedImage;
+import java.awt.image.BufferedImageOp;
+import java.awt.image.ConvolveOp;
+import java.awt.image.Kernel;
+import java.util.LinkedList;
 
 /** A blur object is a dialogue box that allows the user to blur the whole image.
  * The user can then edit the options in the dialog box, and apply the changes to the image.
@@ -107,7 +89,8 @@ public class blur extends javax.swing.JDialog {
 		gridBagConstraints1 = new java.awt.GridBagConstraints();
 		ok_cancel.add(ok, gridBagConstraints1);
 
-		cancel.setText("CANCEL");
+//		cancel.setText("CANCEL");
+		cancel.setText("キャンセル");
 		cancel.addActionListener(new java.awt.event.ActionListener() {
 			public void actionPerformed(java.awt.event.ActionEvent evt) {
 				cancelActionPerformed(evt);
@@ -126,7 +109,8 @@ public class blur extends javax.swing.JDialog {
 		blur_panel.setLayout(new java.awt.GridBagLayout());
 		java.awt.GridBagConstraints gridBagConstraints2;
 
-		blur_panel.setBorder(new javax.swing.border.TitledBorder("BLUR"));
+//		blur_panel.setBorder(new javax.swing.border.TitledBorder("BLUR"));
+		blur_panel.setBorder(new javax.swing.border.TitledBorder("ぼかし"));
 		blur_value.setColumns(10);
 		blur_value.setText("1");
 		blur_value.setMaximumSize(new java.awt.Dimension(1, 50));
@@ -141,13 +125,15 @@ public class blur extends javax.swing.JDialog {
 		gridBagConstraints2.gridy = 1;
 		blur_panel.add(blur_value, gridBagConstraints2);
 
-		jLabel4.setText("blur");
+//		jLabel4.setText("blur");
+		jLabel4.setText("ぼかし");
 		gridBagConstraints2 = new java.awt.GridBagConstraints();
 		gridBagConstraints2.gridx = 0;
 		gridBagConstraints2.gridy = 1;
 		blur_panel.add(jLabel4, gridBagConstraints2);
 
-		jLabel7.setText("times");
+//		jLabel7.setText("times");
+		jLabel7.setText("回");
 		gridBagConstraints2 = new java.awt.GridBagConstraints();
 		gridBagConstraints2.gridx = 2;
 		gridBagConstraints2.gridy = 1;
@@ -245,7 +231,8 @@ public class blur extends javax.swing.JDialog {
 			//((TerpPaint)this.getParent()).center.repaint();
 			selected.flush();
 		} else {
-			cur_action_list.add("Image blur");
+//			cur_action_list.add("Image blur");
+			cur_action_list.add("画像ぼかし");
 			// ming 4.24 end
 			BufferedImage im = ((TerpPaint) this.getParent()).center
 					.getBufferedImage();
