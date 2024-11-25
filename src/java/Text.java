@@ -78,7 +78,8 @@ OurFont myFont = new OurFont();
 	x = x1; /*FAULT:: x = y1; */
 	y = y1;
 
-	this.setTitle("Text");
+//	this.setTitle("Text");
+	this.setTitle("テキスト");
 
 
 	this.setSize(375,50);
@@ -264,17 +265,20 @@ OurFont myFont = new OurFont();
 	gridBagConstraints1.gridy = 1;
 	optionsPanel.add(families, gridBagConstraints1);
 
-	bold.setText("bold");
+//	bold.setText("bold");
+	bold.setText("太字");
 	gridBagConstraints1 = new java.awt.GridBagConstraints();
 	gridBagConstraints1.gridx = 1;
 	gridBagConstraints1.gridy = 0;
 	optionsPanel.add(bold, gridBagConstraints1);
 
-	italics.setText("italics");
+//	italics.setText("italics");
+	italics.setText("斜体");
 	gridBagConstraints1 = new java.awt.GridBagConstraints();
 	optionsPanel.add(italics, gridBagConstraints1);
 
-	underline.setText("underline");
+//	underline.setText("underline");
+	underline.setText("下線");
 	gridBagConstraints1 = new java.awt.GridBagConstraints();
 	gridBagConstraints1.gridx = 0;
 	gridBagConstraints1.gridy = 0;
@@ -282,7 +286,7 @@ OurFont myFont = new OurFont();
 
 	getContentPane().add(optionsPanel, java.awt.BorderLayout.SOUTH);
 
-	Ok.setText("Ok"); /*FAULT:: Ok.setText("okk"); */
+	Ok.setText("OK"); /*FAULT:: Ok.setText("okk"); */
 	Ok.addActionListener(new java.awt.event.ActionListener() {
 	    public void actionPerformed(java.awt.event.ActionEvent evt) {
 		OkActionPerformed(evt);
@@ -291,7 +295,8 @@ OurFont myFont = new OurFont();
 
 	okPanel.add(Ok);
 
-	Cancel.setText("Cancel");
+//	Cancel.setText("Cancel");
+	Cancel.setText("キャンセル");
 	Cancel.addActionListener(new java.awt.event.ActionListener() {
 	    public void actionPerformed(java.awt.event.ActionEvent evt) {
 		 setVisible(false);
