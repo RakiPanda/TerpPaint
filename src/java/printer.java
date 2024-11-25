@@ -10,12 +10,24 @@
  * @version 2.0
  */
 
-import java.awt.print.*;
-import java.awt.*;
-import java.awt.image.*;
-import java.io.*;
-import java.awt.geom.*;
-import javax.swing.*;
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Container;
+import java.awt.Dimension;
+import java.awt.Frame;
+import java.awt.Graphics2D;
+import java.awt.GridLayout;
+import java.awt.geom.AffineTransform;
+import java.awt.image.BufferedImage;
+import java.awt.print.PageFormat;
+import java.awt.print.Printable;
+import java.awt.print.PrinterException;
+import java.awt.print.PrinterJob;
+
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
 
 /** Print class provides functionalities of printing the images. It holds a private BufferedImage image
  * that is initialized once it is passed through the constructor.
@@ -129,9 +141,11 @@ public class printer implements Printable{
      */
     public void preview()
     {
-	view = new JFrame("Print Preview");
+//	view = new JFrame("Print Preview");
+    view = new JFrame("印刷プレビュー");
 	//view.setSize( new Dimension( parent.getWidth(), parent.getHeight() ) );
-	view.setTitle("TerpPaint - Print Preview");
+//	view.setTitle("TerpPaint - Print Preview");
+    view.setTitle("TerpPaint - 印刷プレビュー");
 	view.setBackground(java.awt.Color.white);
 	view.setForeground(java.awt.Color.white);
 	view.setName("frame");
@@ -150,7 +164,8 @@ public class printer implements Printable{
 	//	  bgconstraints.gridx = 0;
 	//	  bgconstraints.gridy = 0;
 
-	JButton printbutton = new JButton("Print");
+//	JButton printbutton = new JButton("Print");
+	JButton printbutton = new JButton("印刷");
 
 	//	  printbutton.setPreferredSize(new java.awt.Dimension(100, 40));
 	printbutton.addActionListener(new java.awt.event.ActionListener() {
@@ -160,7 +175,8 @@ public class printer implements Printable{
 	    }
 	});
 
-	JButton closebutton = new JButton("Close");
+//	JButton closebutton = new JButton("Close");
+	JButton closebutton = new JButton("閉じる");
 	//	  closebutton.setPreferredSize(new java.awt.Dimension(100, 40));
 	closebutton.addActionListener(new java.awt.event.ActionListener() {
 	    public void actionPerformed(java.awt.event.ActionEvent evt) {
