@@ -8,15 +8,7 @@
  *
  * @author  yunpengl
  */
-import java.awt.*;
-import java.awt.event.*;
-import java.io.*;
-import java.net.*;
-import javax.swing.*;
-import javax.swing.event.*;
-import javax.swing.text.*;
-import javax.swing.table.*;
-import java.awt.geom.*;
+import javax.swing.JOptionPane;
 /** This object displays the About window.
  */
 public class about {
@@ -41,9 +33,12 @@ public class about {
 
 
 
+//	JOptionPane.showMessageDialog(null,message,
+//				      "About Terp Paint",
+//				      JOptionPane.INFORMATION_MESSAGE);
 	JOptionPane.showMessageDialog(null,message,
-				      "About Terp Paint",
-				      JOptionPane.INFORMATION_MESSAGE);
+		      "Terp Paintについて",
+		      JOptionPane.INFORMATION_MESSAGE);
     }
 
 }
