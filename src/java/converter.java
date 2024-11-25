@@ -14,15 +14,20 @@
  * @version 2.0
  */
 
-import javax.swing.*;
-import java.io.*;
-import java.util.*;
-import java.awt.*;
-import java.net.*;
-import java.applet.Applet;
-import java.lang.Math;
-import java.lang.String;
-import java.awt.image.*;
+import java.awt.Canvas;
+import java.awt.Color;
+import java.awt.Graphics2D;
+import java.awt.Image;
+import java.awt.image.BufferedImage;
+import java.awt.image.MemoryImageSource;
+import java.awt.image.PixelGrabber;
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.DataInputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
 
 
 /** This class initialize all the variables including the the integers,
