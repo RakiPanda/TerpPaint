@@ -10,32 +10,11 @@
  * @version 2.0
  */
 // ming 4.26
-import java.lang.*;
-import java.awt.*;
-import java.awt.event.*;
-import java.awt.Toolkit.*;
-import java.awt.Image.*;
-import java.util.*;
-import javax.swing.*;
-import javax.swing.event.*;
-import javax.swing.colorchooser.*;
-import java.io.*;
-import java.awt.image.*;
-import java.awt.print.*;
-import java.awt.datatransfer.Clipboard.*;
-import java.awt.datatransfer.*;
-import com.sun.image.codec.jpeg.*;
-import java.applet.*;
 // ming 4.26 end
-import java.awt.*;
-import java.awt.event.*;
-import java.awt.Toolkit.*;
-import java.awt.image.*;
-import javax.swing.*;
-import javax.swing.event.*;
-import javax.swing.colorchooser.*;
-import java.io.*;
-import java.awt.geom.*;
+import java.awt.Graphics2D;
+import java.awt.image.BufferedImage;
+import java.awt.image.RescaleOp;
+import java.util.LinkedList;
 
 /** A brightness object is a dialogue box that allows the user to change the brightness of the whole image.
  * The user can then edit the options in the dialog box, and apply the changes to the image.
@@ -107,7 +86,8 @@ public class brightness extends javax.swing.JDialog {
 	gridBagConstraints1 = new java.awt.GridBagConstraints();
 	ok_cancel.add(ok, gridBagConstraints1);
 
-	cancel.setText("CANCEL");
+//	cancel.setText("CANCEL");
+	cancel.setText("キャンセル");
 	cancel.addActionListener(new java.awt.event.ActionListener() {
 	    public void actionPerformed(java.awt.event.ActionEvent evt) {
 		cancelActionPerformed(evt);
@@ -126,7 +106,8 @@ public class brightness extends javax.swing.JDialog {
 	brightness_panel.setLayout(new java.awt.GridBagLayout());
 	java.awt.GridBagConstraints gridBagConstraints2;
 
-	brightness_panel.setBorder(new javax.swing.border.TitledBorder("BRIGHTNESS"));
+//	brightness_panel.setBorder(new javax.swing.border.TitledBorder("BRIGHTNESS"));
+	brightness_panel.setBorder(new javax.swing.border.TitledBorder("明るさ"));
 	//brightness_value.setColumns(10);
 	//brightness_value.setText("100");
 	brightness_value.setMaximumSize(new java.awt.Dimension(0, 100000));
@@ -144,13 +125,14 @@ public class brightness extends javax.swing.JDialog {
 	brightness_panel.add(brightness_value, gridBagConstraints2);
 
 
-	jLabel4.setText("Brightness");
+//	jLabel4.setText("Brightness");
+	jLabel4.setText("明るさ");
 	gridBagConstraints2 = new java.awt.GridBagConstraints();
 	gridBagConstraints2.gridx = 0;
 	gridBagConstraints2.gridy = 1;
 	brightness_panel.add(jLabel4, gridBagConstraints2);
 
-	jLabel7.setText("  0%		     100%		200%");
+	jLabel7.setText("  0%		     100%		     200%");
 	gridBagConstraints2 = new java.awt.GridBagConstraints();
 	gridBagConstraints2.gridx = 1;
 	gridBagConstraints2.gridy = 2;
