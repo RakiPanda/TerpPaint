@@ -10,8 +10,8 @@
  * @version 2.0
  */
 
-import java.awt.*;
-import java.awt.Toolkit.*;
+import java.awt.Dimension;
+import java.awt.Toolkit;
 
 /** saveChanges provides the user to choose to save or not all changes made on main canvas.
  * There are no OS/Hardware dependencies and no variances.  There is no need for any
@@ -66,14 +66,19 @@ public class saveChanges extends javax.swing.JDialog {
 	    }
 	});
 
-	jLabel1.setText("Save changes to " + fileName + "?");
+//	jLabel1.setText("Save changes to " + fileName + "?");
+	jLabel1.setText(fileName + " に変更を保存しますか？");
+	jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER); // テキストを中央揃え
 	gridBagConstraints1 = new java.awt.GridBagConstraints();
-	gridBagConstraints1.gridx = 2;
+	gridBagConstraints1.gridx = 1;
 	gridBagConstraints1.gridy = 0;
 	gridBagConstraints1.gridwidth = 3;
+    gridBagConstraints1.fill = java.awt.GridBagConstraints.HORIZONTAL; // 横方向に中央配置
+    gridBagConstraints1.insets = new java.awt.Insets(10, 10, 10, 10); // 余白を設定
 	getContentPane().add(jLabel1, gridBagConstraints1);
 
-	YES.setText("YES");
+//	YES.setText("YES");
+	YES.setText("はい");
 	YES.addActionListener(new java.awt.event.ActionListener() {
 	    public void actionPerformed(java.awt.event.ActionEvent evt) {
 		YESActionPerformed(evt);
@@ -81,11 +86,13 @@ public class saveChanges extends javax.swing.JDialog {
 	});
 
 	gridBagConstraints1 = new java.awt.GridBagConstraints();
-	gridBagConstraints1.gridx = 1;
+	gridBagConstraints1.gridx = 0;
 	gridBagConstraints1.gridy = 1;
+	gridBagConstraints1.insets = new java.awt.Insets(5, 10, 5, 10); // ボタンの間隔を設定
 	getContentPane().add(YES, gridBagConstraints1);
 
-	NO.setText("NO");
+//	NO.setText("NO");
+	NO.setText("いいえ");
 	NO.addActionListener(new java.awt.event.ActionListener() {
 	    public void actionPerformed(java.awt.event.ActionEvent evt) {
 		NOActionPerformed(evt);
@@ -93,11 +100,13 @@ public class saveChanges extends javax.swing.JDialog {
 	});
 
 	gridBagConstraints1 = new java.awt.GridBagConstraints();
-	gridBagConstraints1.gridx = 2;
+	gridBagConstraints1.gridx = 1;
 	gridBagConstraints1.gridy = 1;
+	gridBagConstraints1.insets = new java.awt.Insets(5, 10, 5, 10); // ボタンの間隔を設定
 	getContentPane().add(NO, gridBagConstraints1);
 
-	CANCEL.setText("CANCEL");
+//	CANCEL.setText("CANCEL");
+	CANCEL.setText("キャンセル");
 	CANCEL.addActionListener(new java.awt.event.ActionListener() {
 	    public void actionPerformed(java.awt.event.ActionEvent evt) {
 		CANCELActionPerformed(evt);
@@ -105,8 +114,9 @@ public class saveChanges extends javax.swing.JDialog {
 	});
 
 	gridBagConstraints1 = new java.awt.GridBagConstraints();
-	gridBagConstraints1.gridx = 3;
+	gridBagConstraints1.gridx = 2;
 	gridBagConstraints1.gridy = 1;
+	gridBagConstraints1.insets = new java.awt.Insets(5, 10, 5, 10); // ボタンの間隔を設定
 	getContentPane().add(CANCEL, gridBagConstraints1);
 
 	Alert.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/exclamation.gif")));
@@ -120,6 +130,7 @@ public class saveChanges extends javax.swing.JDialog {
 	gridBagConstraints1 = new java.awt.GridBagConstraints();
 	gridBagConstraints1.gridx = 0;
 	gridBagConstraints1.gridy = 0;
+	gridBagConstraints1.insets = new java.awt.Insets(10, 10, 10, 10); // 余白を設定
 	getContentPane().add(Alert, gridBagConstraints1);
 
 	pack();
