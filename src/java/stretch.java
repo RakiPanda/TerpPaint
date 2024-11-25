@@ -10,32 +10,14 @@
  * @version 2.0
  */
 // ming 4.26
-import java.lang.*;
-import java.awt.*;
-import java.awt.event.*;
-import java.awt.Toolkit.*;
-import java.awt.Image.*;
-import java.util.*;
-import javax.swing.*;
-import javax.swing.event.*;
-import javax.swing.colorchooser.*;
-import java.io.*;
-import java.awt.image.*;
-import java.awt.print.*;
-import java.awt.datatransfer.Clipboard.*;
-import java.awt.datatransfer.*;
-import com.sun.image.codec.jpeg.*;
-import java.applet.*;
 // ming 4.26 end
-import java.awt.*;
-import java.awt.event.*;
-import java.awt.Toolkit.*;
-import java.awt.image.*;
-import javax.swing.*;
-import javax.swing.event.*;
-import javax.swing.colorchooser.*;
-import java.io.*;
-import java.awt.geom.*;
+import java.awt.Color;
+import java.awt.Graphics2D;
+import java.awt.geom.AffineTransform;
+import java.awt.image.BufferedImage;
+import java.util.LinkedList;
+
+import javax.swing.JOptionPane;
 
 /** Stretch class is used to either stretch out the
  * image without affecting the size of the canvas (the image might disappear over
@@ -117,7 +99,8 @@ public class stretch extends javax.swing.JDialog {
 	gridBagConstraints1 = new java.awt.GridBagConstraints();
 	ok_cancel.add(ok, gridBagConstraints1);
 
-	cancel.setText("CANCEL");
+//	cancel.setText("CANCEL");
+	cancel.setText("キャンセル");
 	cancel.addActionListener(new java.awt.event.ActionListener() {
 	    public void actionPerformed(java.awt.event.ActionEvent evt) {
 		cancelActionPerformed(evt);
@@ -136,7 +119,8 @@ public class stretch extends javax.swing.JDialog {
 	skew.setLayout(new java.awt.GridBagLayout());
 	java.awt.GridBagConstraints gridBagConstraints2;
 
-	skew.setBorder(new javax.swing.border.TitledBorder("SKEW"));
+//	skew.setBorder(new javax.swing.border.TitledBorder("SKEW"));
+	skew.setBorder(new javax.swing.border.TitledBorder("歪み"));
 	horizontal_skew.setColumns(10);
 	horizontal_skew.setText("0");
 	horizontal_skew.setMaximumSize(new java.awt.Dimension(4, 20));
@@ -165,25 +149,29 @@ public class stretch extends javax.swing.JDialog {
 	gridBagConstraints2.gridy = 2;
 	skew.add(vertical_skew, gridBagConstraints2);
 
-	jLabel3.setText("Vertical");
+//	jLabel3.setText("Vertical");
+	jLabel3.setText("垂直方向");
 	gridBagConstraints2 = new java.awt.GridBagConstraints();
 	gridBagConstraints2.gridx = 0;
 	gridBagConstraints2.gridy = 2;
 	skew.add(jLabel3, gridBagConstraints2);
 
-	jLabel4.setText("Horizontal");
+//	jLabel4.setText("Horizontal");
+	jLabel4.setText("水平方向");
 	gridBagConstraints2 = new java.awt.GridBagConstraints();
 	gridBagConstraints2.gridx = 0;
 	gridBagConstraints2.gridy = 1;
 	skew.add(jLabel4, gridBagConstraints2);
 
-	jLabel7.setText("Degrees");
+//	jLabel7.setText("Degrees");
+	jLabel7.setText("度");
 	gridBagConstraints2 = new java.awt.GridBagConstraints();
 	gridBagConstraints2.gridx = 2;
 	gridBagConstraints2.gridy = 1;
 	skew.add(jLabel7, gridBagConstraints2);
 
-	jLabel8.setText("Degrees");
+//	jLabel8.setText("Degrees");
+	jLabel8.setText("度");
 	gridBagConstraints2 = new java.awt.GridBagConstraints();
 	gridBagConstraints2.gridx = 2;
 	gridBagConstraints2.gridy = 2;
@@ -194,7 +182,8 @@ public class stretch extends javax.swing.JDialog {
 	stretch.setLayout(new java.awt.GridBagLayout());
 	java.awt.GridBagConstraints gridBagConstraints3;
 
-	stretch.setBorder(new javax.swing.border.TitledBorder("STRETCH"));
+//	stretch.setBorder(new javax.swing.border.TitledBorder("STRETCH"));
+	stretch.setBorder(new javax.swing.border.TitledBorder("伸縮"));
 	vertical_stretch.setColumns(10);
 	vertical_stretch.setText("100");
 	vertical_stretch.addActionListener(new java.awt.event.ActionListener() {
@@ -222,7 +211,8 @@ public class stretch extends javax.swing.JDialog {
 	gridBagConstraints3.gridy = 0;
 	stretch.add(horizontal_stretch, gridBagConstraints3);
 
-	jLabel1.setText("Vertical");
+//	jLabel1.setText("Vertical");
+	jLabel1.setText("垂直方向");
 	gridBagConstraints3 = new java.awt.GridBagConstraints();
 	gridBagConstraints3.gridx = 0;
 	gridBagConstraints3.gridy = 1;
@@ -240,7 +230,8 @@ public class stretch extends javax.swing.JDialog {
 	gridBagConstraints3.gridy = 1;
 	stretch.add(jLabel5, gridBagConstraints3);
 
-	jLabel6.setText("Horizontal");
+//	jLabel6.setText("Horizontal");
+	jLabel6.setText("水平方向");
 	gridBagConstraints3 = new java.awt.GridBagConstraints();
 	gridBagConstraints3.gridx = 0;
 	gridBagConstraints3.gridy = 0;
