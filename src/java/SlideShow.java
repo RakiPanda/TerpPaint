@@ -9,19 +9,22 @@
  * @author Terp Paint
  * @version 2.0
  */
-import java.awt.*;
-import java.awt.event.*;
-import java.awt.Toolkit.*;
-import java.awt.Image.*;
-import javax.swing.*;
-import javax.swing.KeyStroke;
-import javax.swing.event.*;
-import javax.swing.colorchooser.*;
-import java.io.*;
-import java.awt.image.*;
-import java.awt.geom.*;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.Image;
+import java.awt.Toolkit;
+import java.awt.geom.AffineTransform;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.FileInputStream;
+import java.util.Vector;
+
+import javax.swing.ImageIcon;
+import javax.swing.JFileChooser;
+
 import com.sun.image.codec.jpeg.*;
-import java.util.*;
 
 /** This class supposively displays a slide show of different bitmaps or jpegs.
  * Unfortunately, it does not appear to be working at the moment.
@@ -83,7 +86,8 @@ public class SlideShow extends javax.swing.JWindow{
 
 	JFileChooser chooser = new JFileChooser();
 	chooser.setDialogType( 2 );
-	chooser.setDialogTitle("Choose a folder");
+//	chooser.setDialogTitle("Choose a folder");
+	chooser.setDialogTitle("フォルダを選択してください");
 	chooser.setFileSelectionMode( 1 );
 	chooser.showDialog(this, "Ok" );
 
