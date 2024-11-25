@@ -10,27 +10,11 @@
  * @version 2.0
  */
 // ming 4.26
-import java.lang.*;
-import java.awt.*;
-import java.awt.event.*;
-import java.awt.Toolkit.*;
-import java.awt.Image.*;
-import java.util.*;
-import javax.swing.*;
-import javax.swing.event.*;
-import javax.swing.colorchooser.*;
-import java.io.*;
-import java.awt.image.*;
-import java.awt.print.*;
-import java.awt.datatransfer.Clipboard.*;
-import java.awt.datatransfer.*;
-import com.sun.image.codec.jpeg.*;
-import java.applet.*;
 // ming 4.26 end
-import java.awt.*;
-import java.awt.image.*;
-import java.io.*;
-import java.awt.geom.*;
+import java.awt.Graphics2D;
+import java.awt.geom.AffineTransform;
+import java.awt.image.BufferedImage;
+import java.util.LinkedList;
 
 /** A rotate object is a dialogue box that allows the user to rotate and flip the entire image about its very center. The user can then edit the options in the dialog box, and apply the changes to the image. Dialog box is terminated by clicking on the 'OK' or 'Cancel' buttons. OK will instantiated the changes, Cancel will do nothing to the original image.
  * The user can rotate the image by a variable degree amount or set intervals of 90 degrees.
@@ -93,7 +77,8 @@ public class rotate extends javax.swing.JDialog {
 	gridBagConstraints1.anchor = java.awt.GridBagConstraints.WEST;
 	ok_cancel.add(ok, gridBagConstraints1);
 
-	cancel.setText("CANCEL");
+//	cancel.setText("CANCEL");
+	cancel.setText("キャンセル");
 	cancel.addActionListener(new java.awt.event.ActionListener() {
 	    public void actionPerformed(java.awt.event.ActionEvent evt) {
 		cancelActionPerformed(evt);
@@ -111,7 +96,8 @@ public class rotate extends javax.swing.JDialog {
 	java.awt.GridBagConstraints gridBagConstraints2;
 
 	flipHorizontal.setSelected(true);
-	flipHorizontal.setText("Flip Horizontal");
+//	flipHorizontal.setText("Flip Horizontal");
+	flipHorizontal.setText("水平方向に反転");
 	outterButtons.add(flipHorizontal);
 	flipHorizontal.addActionListener(new java.awt.event.ActionListener() {
 	    public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -123,7 +109,8 @@ public class rotate extends javax.swing.JDialog {
 	gridBagConstraints2.anchor = java.awt.GridBagConstraints.WEST;
 	choices.add(flipHorizontal, gridBagConstraints2);
 
-	flipVertical.setText("Flip Vertical");
+//	flipVertical.setText("Flip Vertical");
+	flipVertical.setText("垂直方向に反転");
 	outterButtons.add(flipVertical);
 	flipVertical.addActionListener(new java.awt.event.ActionListener() {
 	    public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -138,7 +125,7 @@ public class rotate extends javax.swing.JDialog {
 	choices.add(flipVertical, gridBagConstraints2);
 
 	quarterTurn.setSelected(true);
-	quarterTurn.setText("90");
+	quarterTurn.setText("90°");
 	degrees.add(quarterTurn);
 	quarterTurn.setEnabled(false);
 	gridBagConstraints2 = new java.awt.GridBagConstraints();
@@ -148,7 +135,7 @@ public class rotate extends javax.swing.JDialog {
 	gridBagConstraints2.anchor = java.awt.GridBagConstraints.WEST;
 	choices.add(quarterTurn, gridBagConstraints2);
 
-	halfTurn.setText("180");
+	halfTurn.setText("180°");
 	degrees.add(halfTurn);
 	halfTurn.setEnabled(false);
 	gridBagConstraints2 = new java.awt.GridBagConstraints();
@@ -158,7 +145,7 @@ public class rotate extends javax.swing.JDialog {
 	gridBagConstraints2.anchor = java.awt.GridBagConstraints.WEST;
 	choices.add(halfTurn, gridBagConstraints2);
 
-	threeQuarters.setText("270");
+	threeQuarters.setText("270°");
 	degrees.add(threeQuarters);
 	threeQuarters.setEnabled(false);
 	gridBagConstraints2 = new java.awt.GridBagConstraints();
@@ -168,7 +155,8 @@ public class rotate extends javax.swing.JDialog {
 	gridBagConstraints2.anchor = java.awt.GridBagConstraints.WEST;
 	choices.add(threeQuarters, gridBagConstraints2);
 
-	rotate.setText("Rotate by angle");
+//	rotate.setText("Rotate by angle");
+	rotate.setText("角度を指定し回転");
 	outterButtons.add(rotate);
 	rotate.addActionListener(new java.awt.event.ActionListener() {
 	    public void actionPerformed(java.awt.event.ActionEvent evt) {
