@@ -125,7 +125,7 @@ popUp.setVisible(false);
 	temp = new JFrame();
 	temp.setLocation( (int) temp.getLocation().getX()+300, (int) temp.getLocation().getY()+300);
 //	temp.setTitle("New Layer Name");
-	temp.setTitle("新規レイヤーの名前");
+	temp.setTitle("新しいレイヤーの名前");
 	temp.setVisible(true);
 	JButton ok = new JButton("OK");
 //	JButton cancel = new JButton("Cancel");
@@ -134,12 +134,19 @@ popUp.setVisible(false);
 	ok_cancel.setLayout(new GridBagLayout());
 	GridBagConstraints constraints;
 	constraints = new GridBagConstraints();
+	
+	//OKボタン
 	constraints.gridx = 0;
 	constraints.gridy = 0;
 	constraints.anchor = java.awt.GridBagConstraints.WEST;
-	ok_cancel.add(ok, constraints);
+    constraints.insets = new java.awt.Insets(0, 0, 10, 20); // 上下のスペースなし、右側に20px
+    ok_cancel.add(ok, constraints);
+    
+    //キャンセルボタン
 	constraints.gridx = 0;
 	constraints.gridy = 1;
+	constraints.anchor = java.awt.GridBagConstraints.WEST;
+    constraints.insets = new java.awt.Insets(0, 0, 0, 20); // 上下のスペースなし、右側に20px
 	ok_cancel.add(cancel, constraints);
 
 	ok.addActionListener(new java.awt.event.ActionListener() {
@@ -155,17 +162,27 @@ popUp.setVisible(false);
 	});
 
 //	JLabel message = new JLabel("Enter new Layer Name");
-	JLabel message = new JLabel("新規レイヤーの名前を入力してください");
+	JLabel message = new JLabel("新しいレイヤーの名前を入力してください");
+	message.setPreferredSize(new java.awt.Dimension(300, 20)); // 幅300pxに調整
 	area = new JTextField("",20);
+	area.setPreferredSize(new java.awt.Dimension(250, 20)); // 入力欄の幅を設定
+	
 	JPanel info = new JPanel();
 	info.setLayout(new GridBagLayout());
+	
+	// テキストラベルの左側にスペースを加える
+    constraints = new GridBagConstraints();
 	constraints.gridx = 0;
 	constraints.gridy = 0;
 	constraints.anchor = java.awt.GridBagConstraints.WEST;
+	constraints.insets = new java.awt.Insets(0, 20, 10, 0); // 上:0px 左:20px 下:10px 右:0px
 	info.add(message, constraints);
+	
+	// 入力欄の左側にスペースを加える
 	constraints.gridx = 0;
 	constraints.gridy = 1;
 	constraints.anchor = java.awt.GridBagConstraints.WEST;
+	constraints.insets = new java.awt.Insets(0, 20, 0, 0); // 上:0px 左:20px 下:0px 右:0px
 	info.add(area, constraints);
 
 
