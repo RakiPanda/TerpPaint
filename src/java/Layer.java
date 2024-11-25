@@ -1,13 +1,17 @@
-import java.io.*;
-import java.lang.*;
-import java.awt.*;
-import javax.swing.*;
+import java.awt.BorderLayout;
+import java.awt.GridBagConstraints;
+import java.awt.GridBagLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-import java.util.*;
-import java.awt.event.*;
-import java.awt.image.*;
-import java.io.*;
-import java.awt.geom.*;
+import javax.swing.JButton;
+import javax.swing.JCheckBox;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JRadioButtonMenuItem;
+import javax.swing.JTextField;
 
 /** Layer is used to create a new main canvas to draw upon
  * The OS is windows.
@@ -24,7 +28,8 @@ public class Layer extends JFrame{
      */
     public Layer(main_canvas theCanvas) {
 	all = (AllLayers)this.getParent();
-	Name = "Layer " + String.valueOf(number);
+//	Name = "Layer " + String.valueOf(number);
+	Name = "レイヤー " + String.valueOf(number);
 	number++;
 	/*FAULT::Name = "Layer " + String.valueOf(number);*/
 	layerCanvas = theCanvas;
@@ -119,10 +124,12 @@ popUp.setVisible(false);
     public void changeActionPerformed(ActionEvent evt) {
 	temp = new JFrame();
 	temp.setLocation( (int) temp.getLocation().getX()+300, (int) temp.getLocation().getY()+300);
-	temp.setTitle("New Layer Name");
+//	temp.setTitle("New Layer Name");
+	temp.setTitle("新規レイヤーの名前");
 	temp.setVisible(true);
 	JButton ok = new JButton("OK");
-	JButton cancel = new JButton("Cancel");
+//	JButton cancel = new JButton("Cancel");
+	JButton cancel = new JButton("キャンセル");
 	JPanel ok_cancel = new JPanel();
 	ok_cancel.setLayout(new GridBagLayout());
 	GridBagConstraints constraints;
@@ -147,7 +154,8 @@ popUp.setVisible(false);
 	    }
 	});
 
-	JLabel message = new JLabel("Enter new Layer Name");
+//	JLabel message = new JLabel("Enter new Layer Name");
+	JLabel message = new JLabel("新規レイヤーの名前を入力してください");
 	area = new JTextField("",20);
 	JPanel info = new JPanel();
 	info.setLayout(new GridBagLayout());
