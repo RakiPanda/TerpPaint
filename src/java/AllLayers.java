@@ -1,12 +1,3 @@
-import java.io.*;
-import java.lang.*;
-import java.awt.*;
-import javax.swing.*;
-import java.util.*;
-import java.awt.event.*;
-import java.awt.image.*;
-import java.io.*;
-import java.awt.geom.*;
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.GridBagConstraints;
@@ -237,10 +228,11 @@ public class AllLayers extends JDialog{
 	constraints.gridy = 0;
 
 	topLabels.add(curLabel, constraints);
-	constraints.gridx = 1;
-	constraints.gridy = 0;
-	constraints.insets = new Insets(0,52,0,0);
-	topLabels.add(NameLabel, constraints);
+//	レイヤー名の配置が上手くいかないので削除
+//	constraints.gridx = 1;
+//	constraints.gridy = 0;
+//	constraints.insets = new Insets(0,52,0,0);
+//	topLabels.add(NameLabel, constraints);
 
 
 	singleLayer.setLayout(new GridBagLayout());
