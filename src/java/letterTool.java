@@ -3,12 +3,7 @@
  * edited on Feb. 10, 2003
  */
 
-import javax.swing.*;
-import java.awt.*;
-import java.awt.event.*;
-import java.io.*;
-import java.awt.image.*;
-import java.awt.geom.*;
+import java.awt.event.MouseEvent;
 
  /** The letterTool class represents letter tools. All texts are implemented by
   * mouse events with x-coordinates and	 y-coordinates in parent frame.
@@ -30,7 +25,7 @@ import java.awt.geom.*;
 
     /** Holds the size of the current Font.
      */
-    public static int currentFont = 0;
+    public static int currentFont = -1;
     /** Holds the state of the font's boldness.
      */
     public static boolean boldness = false;
@@ -42,7 +37,7 @@ import java.awt.geom.*;
     public static boolean italicness = false;
     /** Holds the state of the font's current size.
      */
-    public static int currentSize = 0;
+    public static int currentSize = -1;
 
     /** The dialog is closed by OK.
      */

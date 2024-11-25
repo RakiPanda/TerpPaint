@@ -86,12 +86,36 @@ OurFont myFont = new OurFont();
 	initComponents();
 	addSizes();
 	addFamilies();
-	families.setSelectedIndex( letterTool.currentFont );
-	underline.setSelected( letterTool.underlineness );
-	bold.setSelected( letterTool.boldness );
-	italics.setSelected( letterTool.italicness );
-	size.setSelectedIndex( letterTool.currentSize );
-
+	
+    // フォント設定の引き継ぎ
+    // デフォルトのフォントを「游明朝」に設定
+    int yuMinchoIndex = -1;
+    for (int i = 0; i < families.getItemCount(); i++) {
+        if (families.getItemAt(i).equals("游明朝")) {
+            yuMinchoIndex = i;
+            break;
+        }
+    }
+    if (letterTool.currentFont != -1) {
+        families.setSelectedIndex(letterTool.currentFont);
+    } else if (yuMinchoIndex != -1) {
+        families.setSelectedIndex(yuMinchoIndex);
+    } else {
+        System.out.println("游明朝フォントが見つかりませんでした。");
+    }
+    
+    // フォントサイズの引き継ぎ
+    if (letterTool.currentSize != -1) {
+        size.setSelectedIndex(letterTool.currentSize);
+    } else {
+        size.setSelectedItem(18); // デフォルトを18に設定
+    }    
+    
+    // スタイル設定の引き継ぎ
+    underline.setSelected(letterTool.underlineness);
+    bold.setSelected(letterTool.boldness);
+    italics.setSelected(letterTool.italicness);
+    
 	ok_action = false;
     }
 
