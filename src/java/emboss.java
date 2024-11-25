@@ -110,6 +110,7 @@ public class emboss extends javax.swing.JDialog {
 
 //		choices.setBorder(new javax.swing.border.TitledBorder("LIGHT"));
 		choices.setBorder(new javax.swing.border.TitledBorder("引き伸ばす方向"));
+		choices.setPreferredSize(new java.awt.Dimension(150, 240)); // 日本語化に伴ってサイズを調整
 		choices.setLayout(new java.awt.GridBagLayout());
 		java.awt.GridBagConstraints gridBagConstraints2;
 
