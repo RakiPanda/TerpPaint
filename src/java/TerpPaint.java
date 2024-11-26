@@ -1474,7 +1474,7 @@ public class TerpPaint extends javax.swing.JFrame {
 	Filter.add(Blur);
 
 //	Sharpen.setText("Sharpen");
-	Sharpen.setText("輪郭強調");
+	Sharpen.setText("シャープ");
 	Sharpen.setMnemonic(KeyEvent.VK_H);
 	Sharpen.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_H, ActionEvent.CTRL_MASK));
 	Sharpen.addActionListener(new java.awt.event.ActionListener() {
