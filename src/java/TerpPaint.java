@@ -1547,7 +1547,8 @@ public class TerpPaint extends javax.swing.JFrame {
 	setTitle("TerpPaint - "+CURRENT_FILE);
 	setBackground(Color.white);
 	setForeground(Color.white);
-	setName("frame");
+//	setName("frame");
+	setName("フレーム");
 	addWindowListener(new java.awt.event.WindowAdapter() {
 	    public void windowClosing(java.awt.event.WindowEvent evt) {
 		//TODO: saveChanges
@@ -1566,7 +1567,8 @@ public class TerpPaint extends javax.swing.JFrame {
 
 	line.setBackground(java.awt.Color.lightGray);
 	line.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/line_16_16.gif")));
-	line.setToolTipText("Line");
+//	line.setToolTipText("Line");
+	line.setToolTipText("直線");
 	line.setActionCommand("line");
 	line.setMargin(new java.awt.Insets(0, 0, 0, 0));
 	line.setMaximumSize(new java.awt.Dimension(24, 24));
@@ -1585,7 +1587,8 @@ public class TerpPaint extends javax.swing.JFrame {
 
 	curve.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/curve_16_16.gif")));
 	curve.setActionCommand("line");
-	curve.setToolTipText("Curve");
+//	curve.setToolTipText("Curve");
+	curve.setToolTipText("曲線");
 	curve.setMargin(new java.awt.Insets(0, 0, 0, 0));
 	curve.setMaximumSize(new java.awt.Dimension(24, 24));
 	curve.setMinimumSize(new java.awt.Dimension(24, 24));
@@ -1603,7 +1606,8 @@ public class TerpPaint extends javax.swing.JFrame {
 
 	rounded_rectangle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/rounded_16_16.gif")));
 	rounded_rectangle.setActionCommand("line");
-	rounded_rectangle.setToolTipText("Rounded Rectangle");
+//	rounded_rectangle.setToolTipText("Rounded Rectangle");
+	rounded_rectangle.setToolTipText("四角形（角丸）");
 	rounded_rectangle.setMargin(new java.awt.Insets(0, 0, 0, 0));
 	rounded_rectangle.setMaximumSize(new java.awt.Dimension(24, 24));
 	rounded_rectangle.setMinimumSize(new java.awt.Dimension(24, 24));
@@ -1621,7 +1625,8 @@ public class TerpPaint extends javax.swing.JFrame {
 
 	square.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/square_16_16.gif")));
 	square.setActionCommand("line");
-	square.setToolTipText("Rectangle");
+//	square.setToolTipText("Rectangle");
+	square.setToolTipText("四角形");
 	square.setMargin(new java.awt.Insets(0, 0, 0, 0));
 	square.setMaximumSize(new java.awt.Dimension(24, 24));
 	square.setMinimumSize(new java.awt.Dimension(24, 24));
@@ -1639,7 +1644,8 @@ public class TerpPaint extends javax.swing.JFrame {
 
 	polygon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/polygon_16_16.gif")));
 	polygon.setActionCommand("line");
-	polygon.setToolTipText("Polygon");
+//	polygon.setToolTipText("Polygon");
+	polygon.setToolTipText("多角形");
 	polygon.setMargin(new java.awt.Insets(0, 0, 0, 0));
 	polygon.setMaximumSize(new java.awt.Dimension(24, 24));
 	polygon.setMinimumSize(new java.awt.Dimension(24, 24));
@@ -1657,7 +1663,8 @@ public class TerpPaint extends javax.swing.JFrame {
 
 	elipse.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/elipse_16_16.gif")));
 	elipse.setActionCommand("line");
-	elipse.setToolTipText("Ellipse");
+//	elipse.setToolTipText("Ellipse");
+	elipse.setToolTipText("円");
 	elipse.setMargin(new java.awt.Insets(0, 0, 0, 0));
 	elipse.setMaximumSize(new java.awt.Dimension(24, 24));
 	elipse.setMinimumSize(new java.awt.Dimension(24, 24));
@@ -1676,7 +1683,8 @@ public class TerpPaint extends javax.swing.JFrame {
 	selectall.setBackground(java.awt.Color.lightGray);
 	selectall.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/selectall_16_16.gif")));
 	selectall.setActionCommand("line");
-	selectall.setToolTipText("Select");
+//	selectall.setToolTipText("Select");
+	selectall.setToolTipText("選択");
 	selectall.setMargin(new java.awt.Insets(0, 0, 0, 0));
 	selectall.setMaximumSize(new java.awt.Dimension(24, 24));
 	selectall.setMinimumSize(new java.awt.Dimension(24, 24));
@@ -1698,7 +1706,8 @@ public class TerpPaint extends javax.swing.JFrame {
 	eraser.setBackground(java.awt.Color.lightGray);
 	eraser.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/eraser_16_16.gif")));
 	eraser.setActionCommand("line");
-	eraser.setToolTipText("Eraser");
+//	eraser.setToolTipText("Eraser");
+	eraser.setToolTipText("消しゴム");
 	eraser.setMargin(new java.awt.Insets(0, 0, 0, 0));
 	eraser.setMaximumSize(new java.awt.Dimension(24, 24));
 	eraser.setMinimumSize(new java.awt.Dimension(24, 24));
@@ -1717,7 +1726,8 @@ public class TerpPaint extends javax.swing.JFrame {
 	paint.setBackground(java.awt.Color.lightGray);
 	paint.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/paint_16_16.gif")));
 	paint.setActionCommand("line");
-	paint.setToolTipText("Fill With Color");
+//	paint.setToolTipText("Fill With Color");
+	paint.setToolTipText("塗りつぶし");
 	paint.setMargin(new java.awt.Insets(0, 0, 0, 0));
 	paint.setMaximumSize(new java.awt.Dimension(24, 24));
 	paint.setMinimumSize(new java.awt.Dimension(24, 24));
@@ -1736,7 +1746,8 @@ public class TerpPaint extends javax.swing.JFrame {
 	medicine.setBackground(java.awt.Color.lightGray);
 	medicine.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/medicine_16_16.gif")));
 	medicine.setActionCommand("line");
-	medicine.setToolTipText("Pick Color");
+//	medicine.setToolTipText("Pick Color");
+	medicine.setToolTipText("スポイト");
 	medicine.setMargin(new java.awt.Insets(0, 0, 0, 0));
 	medicine.setMaximumSize(new java.awt.Dimension(24, 24));
 	medicine.setMinimumSize(new java.awt.Dimension(24, 24));
@@ -1755,7 +1766,8 @@ public class TerpPaint extends javax.swing.JFrame {
 	zoom.setBackground(java.awt.Color.lightGray);
 	zoom.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/zoom_16_16.gif")));
 	zoom.setActionCommand("line");
-	zoom.setToolTipText("Magnifier");
+//	zoom.setToolTipText("Magnifier");
+	zoom.setToolTipText("ズーム");
 	zoom.setMargin(new java.awt.Insets(0, 0, 0, 0));
 	zoom.setMaximumSize(new java.awt.Dimension(24, 24));
 	zoom.setMinimumSize(new java.awt.Dimension(24, 24));
@@ -1774,7 +1786,8 @@ public class TerpPaint extends javax.swing.JFrame {
 	pencil.setBackground(java.awt.Color.lightGray);
 	pencil.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/pencil_16_16.gif")));
 	pencil.setActionCommand("line");
-	pencil.setToolTipText("Pencil");
+//	pencil.setToolTipText("Pencil");
+	pencil.setToolTipText("ペン");
 	pencil.setMargin(new java.awt.Insets(0, 0, 0, 0));
 	pencil.setMaximumSize(new java.awt.Dimension(24, 24));
 	pencil.setMinimumSize(new java.awt.Dimension(24, 24));
@@ -1796,7 +1809,8 @@ public class TerpPaint extends javax.swing.JFrame {
 	brush.setBackground(java.awt.Color.lightGray);
 	brush.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/brush_16_16.gif")));
 	brush.setActionCommand("line");
-	brush.setToolTipText("Brush");
+//	brush.setToolTipText("Brush");
+	brush.setToolTipText("ブラシ");
 	brush.setMargin(new java.awt.Insets(0, 0, 0, 0));
 	brush.setMaximumSize(new java.awt.Dimension(24, 24));
 	brush.setMinimumSize(new java.awt.Dimension(24, 24));
@@ -1815,7 +1829,8 @@ public class TerpPaint extends javax.swing.JFrame {
 	spray.setBackground(java.awt.Color.lightGray);
 	spray.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/spray_16_16.gif")));
 	spray.setActionCommand("line");
-	spray.setToolTipText("Airbrush");
+//	spray.setToolTipText("Airbrush");
+	spray.setToolTipText("スプレー");
 	spray.setMargin(new java.awt.Insets(0, 0, 0, 0));
 	spray.setMaximumSize(new java.awt.Dimension(24, 24));
 	spray.setMinimumSize(new java.awt.Dimension(24, 24));
@@ -1834,7 +1849,8 @@ public class TerpPaint extends javax.swing.JFrame {
 	letter.setBackground(java.awt.Color.lightGray);
 	letter.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/letter_16_16.gif")));
 	letter.setActionCommand("line");
-	letter.setToolTipText("Text");
+//	letter.setToolTipText("Text");
+	letter.setToolTipText("テキスト");
 	letter.setMargin(new java.awt.Insets(0, 0, 0, 0));
 	letter.setMaximumSize(new java.awt.Dimension(24, 24));
 	letter.setMinimumSize(new java.awt.Dimension(24, 24));
@@ -1853,7 +1869,8 @@ public class TerpPaint extends javax.swing.JFrame {
 	select.setBackground(java.awt.Color.lightGray);
 	select.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/select_16_16.gif")));
 	select.setActionCommand("line");
-	select.setToolTipText("Free-Form Select");
+//	select.setToolTipText("Free-Form Select");
+	select.setToolTipText("自由選択");
 	select.setAlignmentY(0.0F);
 	select.setMargin(new java.awt.Insets(0, 0, 0, 0));
 	select.setMaximumSize(new java.awt.Dimension(24, 24));
@@ -1876,7 +1893,8 @@ public class TerpPaint extends javax.swing.JFrame {
 	magicSelect.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/magic2.gif")));
 	//new color added
 	magicSelect.setActionCommand("line");
-	magicSelect.setToolTipText("Magic Wand Select");
+//	magicSelect.setToolTipText("Magic Wand Select");
+	magicSelect.setToolTipText("マジックワンド");
 	magicSelect.setAlignmentY(0.0F);
 	magicSelect.setMargin(new java.awt.Insets(0, 0, 0, 0));
 	magicSelect.setMaximumSize(new java.awt.Dimension(24, 24));
