@@ -420,6 +420,10 @@ public class TerpPaint extends javax.swing.JFrame {
 	    locationHeight = Integer.parseInt(d.readLine() );
 	    sizeWidth = Integer.parseInt(d.readLine());
 	    sizeHeight = Integer.parseInt(d.readLine() );
+	    // 画面全体のサイズを取得
+	    Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+	    sizeWidth = screenSize.width + 18;
+	    sizeHeight = screenSize.height + 4;
 	    imageSizeWidth = Integer.parseInt(d.readLine());
 	    imageSizeHeight = Integer.parseInt(d.readLine() );
 	    tbx = Integer.parseInt(d.readLine() );
