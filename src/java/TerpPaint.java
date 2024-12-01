@@ -408,8 +408,8 @@ public class TerpPaint extends javax.swing.JFrame {
 	if(alone){
 	    splash();
 	}
-		int imageSizeWidth=500;
-		int imageSizeHeight=500;
+		int imageSizeWidth=1000;
+		int imageSizeHeight=1000;
 		
 		
 	try
