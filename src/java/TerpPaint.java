@@ -524,7 +524,7 @@ public class TerpPaint extends javax.swing.JFrame {
 		colorTable.add( new java.awt.Color(160, 160, 160) );
 		//new color added
 	center.resizeImage( imageSizeWidth, imageSizeHeight );
-	center.setZoom(1.0);
+	center.setZoom(2.0);
 	center.repaint();
 
 	//center.noChanges();
