@@ -7115,6 +7115,8 @@ public static BufferedImage getIcon(File f)
     {
 	  //Istvan phase 5.7pm
 	  JFileChooser chooser = new JFileChooser();
+	  // デフォルトの保存フォルダを設定
+	  chooser.setCurrentDirectory(new File("C:\\Users\\scrum\\OneDrive\\ドキュメント\\TerpPaint_画像\\ペイントソフト実験"));
       TerpPaintFileFilter bmp = new TerpPaintFileFilter(new String[]{"bmp", "dib"}, "Monochrome Bitmap");
       TerpPaintFileFilter jpeg = new TerpPaintFileFilter(new String[]{"jpeg", "jpg"}, "JPEG Image");
       TerpPaintFileFilter gif = new TerpPaintFileFilter(new String("gif"), "GIF Image");
