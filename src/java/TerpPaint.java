@@ -533,6 +533,7 @@ public class TerpPaint extends javax.swing.JFrame {
 
 	System.out.println("after setCanvasSize() ");
 	alllayers = new AllLayers(this, false, center);
+	lbx = 0; // デフォルトでレイヤーボックスを無効に設定
 	if(lbx == 1)
 	{
 		LayerBox.setSelected(true);
