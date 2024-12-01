@@ -5779,6 +5779,13 @@ if(center.main_image.getWidth()*8*center.main_image.getHeight()*8<9000000){
 	}
 
 		JFileChooser chooser = new JFileChooser();
+		
+	 // 最初に参照するフォルダを設定
+	 File initialFolder = new File("C:\\Users\\scrum\\OneDrive\\ドキュメント\\TerpPaint_画像");
+	 if (initialFolder.exists() && initialFolder.isDirectory()) {
+		 chooser.setCurrentDirectory(initialFolder);
+	 }
+	 
 	TerpPaintFileFilter bmp = new TerpPaintFileFilter(new String[]{"bmp", "dib"}, "Monochrome Bitmap");
 	TerpPaintFileFilter jpeg = new TerpPaintFileFilter(new String[]{"jpeg", "jpg"}, "JPEG Image");
 	TerpPaintFileFilter gif = new TerpPaintFileFilter(new String("gif"), "GIF Image");
