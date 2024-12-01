@@ -1,0 +1,15 @@
+false
+false
+false
+true
+true
+false
+true
+false
+false
+2000.0
+300
+300
+10
+(none)
+-1
