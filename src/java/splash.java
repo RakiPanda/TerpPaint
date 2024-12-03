@@ -9,18 +9,18 @@
  * @author  Terp Paint
  * @version 2.0
  */
-import com.sun.image.codec.jpeg.*;
-import java.awt.*;
-import java.awt.event.*;
-import java.awt.Toolkit.*;
-import java.awt.Image.*;
-import javax.swing.*;
-import java.lang.*;
-import javax.swing.event.*;
-import java.util.*;
-import javax.swing.colorchooser.*;
-import java.io.*;
-import java.awt.image.*;
+//import com.sun.image.codec.jpeg.*;
+import java.awt.Dimension;
+import java.awt.Frame;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.Image;
+import java.awt.RenderingHints;
+import java.awt.Toolkit;
+import java.awt.image.BufferedImage;
+import java.io.File;
+
+import javax.imageio.ImageIO;
 
 /** This class creates the splash screen which is displayed in the very
  * beginning of executing the Paint program.
@@ -69,8 +69,9 @@ public class splash extends javax.swing.JWindow{
 
 	try{
 	    File greg = new File("./images/paint_splash.jpeg");
-		JPEGImageDecoder decoder = JPEGCodec.createJPEGDecoder(new FileInputStream(greg));
-		main_image = (BufferedImage)decoder.decodeAsBufferedImage();
+//		JPEGImageDecoder decoder = JPEGCodec.createJPEGDecoder(new FileInputStream(greg));
+//		main_image = (BufferedImage)decoder.decodeAsBufferedImage();
+	    main_image = ImageIO.read(greg);
 	}catch(Exception e){System.out.println("no splash image"+e);}
 	this.setSize(main_image.getWidth(), main_image.getHeight());
 	Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
@@ -105,8 +106,9 @@ public class splash extends javax.swing.JWindow{
 
 	try{
 	    File greg = new File("./images/paint_splash.jpeg");
-	    JPEGImageDecoder decoder = JPEGCodec.createJPEGDecoder(new FileInputStream(greg));
-	    main_image = (BufferedImage)decoder.decodeAsBufferedImage();
+//	    JPEGImageDecoder decoder = JPEGCodec.createJPEGDecoder(new FileInputStream(greg));
+//	    main_image = (BufferedImage)decoder.decodeAsBufferedImage();
+	    main_image = ImageIO.read(greg);
 	}catch(Exception e){System.out.println("no splash image"+e);}
 	this.setSize(main_image.getWidth(), main_image.getHeight());
 	Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
