@@ -426,7 +426,7 @@ public class TerpPaint extends javax.swing.JFrame {
 	    // 画面全体のサイズを取得
 	    Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
 	    sizeWidth = screenSize.width + 16;
-	    sizeHeight = screenSize.height + 12;
+	    sizeHeight = screenSize.height + 8;
 	    imageSizeWidth = Integer.parseInt(d.readLine());
 	    imageSizeHeight = Integer.parseInt(d.readLine() );
 	    imageSizeWidth = 853;
