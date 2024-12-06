@@ -1,4 +1,3 @@
-/.cvsignore
 /AllLayers$1.class
 /AllLayers$10.class
 /AllLayers$11.class
@@ -263,8 +262,6 @@
 /emboss$3.class
 /emboss.class
 /eraserTool.class
-/help/
-/images/
 /letterTool.class
 /lineTool.class
 /magicSelectTool.class
@@ -295,13 +292,11 @@
 /preferences$8.class
 /preferences$9.class
 /preferences.class
-/prefs.txt
 /prefsState.class
 /printer$1.class
 /printer$2.class
 /printer$3.class
 /printer.class
-/recentFiles.txt
 /rectTool.class
 /rotate$1.class
 /rotate$2.class
@@ -325,7 +320,6 @@
 /splash$3.class
 /splash.class
 /sprayTool.class
-/windowRegistry.txt
 /stretch$1.class
 /stretch$2.class
 /stretch$3.class
@@ -338,3 +332,4 @@
 /viewBitmap$2.class
 /viewBitmap.class
 /zoomTool.class
+/folderConfig.txt

@@ -45,6 +45,8 @@ Sub Compile(javafilespath)
    	fso.GetAbsolutePathName(binpath & "\prefs.txt")
    fso.CopyFile fso.GetAbsolutePathName(srcpath & "\windowRegistry.txt"), _
    	fso.GetAbsolutePathName(binpath & "\windowRegistry.txt")
+   fso.CopyFile fso.GetAbsolutePathName(srcpath & "\folderConfig.txt"), _
+   	fso.GetAbsolutePathName(binpath & "\folderConfig.txt")
    fso.CopyFile fso.GetAbsolutePathName(junitfilepath & "\123.bmp"), _
         fso.GetAbosultePathName(binpath * "\123.bmp")
    fso.CopyFile fso.GetAbsolutePathName(junitfilepath & "\test.gif"), _

@@ -40,6 +40,7 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.FileWriter;
+import java.io.InputStreamReader;
 import java.io.PrintStream;
 import java.util.LinkedList;
 import java.util.Vector;
@@ -5784,10 +5785,24 @@ if(center.main_image.getWidth()*8*center.main_image.getHeight()*8<9000000){
 		JFileChooser chooser = new JFileChooser();
 		
 	 // 最初に参照するフォルダを設定
-	 File initialFolder = new File("C:\\Users\\scrum\\OneDrive\\ドキュメント\\TerpPaint_画像\\ペイントソフト実験");
-	 if (initialFolder.exists() && initialFolder.isDirectory()) {
-		 chooser.setCurrentDirectory(initialFolder);
-	 }
+	// テキストファイルから初期フォルダパスを読み込む
+	 try
+		{
+		// UTF-8 でファイルを読み込む
+		    InputStreamReader reader = new InputStreamReader(new FileInputStream("folderConfig.txt"), "UTF-8");
+		    BufferedReader d= new BufferedReader( reader );
+		    String initialFolderPath = d.readLine();
+		    reader.close();
+		    File initialFolder = new File(initialFolderPath);
+		 // 初期フォルダの設定
+		    if (initialFolder.exists() && initialFolder.isDirectory()) {
+		        chooser.setCurrentDirectory(initialFolder);
+		        System.out.println("初期フォルダが設定されました: " + initialFolder.getAbsolutePath());
+		    } else {
+		        System.err.println("フォルダが存在しないか、有効ではありません: " + initialFolderPath);
+		    }
+		}
+		catch( Exception e ) {}
 	 
 	TerpPaintFileFilter bmp = new TerpPaintFileFilter(new String[]{"bmp", "dib"}, "Monochrome Bitmap");
 	TerpPaintFileFilter jpeg = new TerpPaintFileFilter(new String[]{"jpeg", "jpg"}, "JPEG Image");
