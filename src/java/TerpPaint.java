@@ -7165,16 +7165,18 @@ public static BufferedImage getIcon(File f)
       chooser.addChoosableFileFilter(bmp);
 
 
-      if(CURRENT_FILE.endsWith(".jpg") || CURRENT_FILE.endsWith(".jpeg"))
-	  chooser.setFileFilter(jpeg);
-      else if(CURRENT_FILE.endsWith(".gif"))
-	  chooser.setFileFilter(gif);
-      else if(CURRENT_FILE.endsWith(".gifa"))
-	chooser.setFileFilter(gifa);
-      else if(CURRENT_FILE.endsWith(".tpt"))
-	chooser.setFileFilter(tpt);
-      else
-	  chooser.setFileFilter(bmp);
+      // デフォルトフィルタをJPEGに設定
+      chooser.setFileFilter(jpeg);
+//      if(CURRENT_FILE.endsWith(".jpg") || CURRENT_FILE.endsWith(".jpeg"))
+//	  chooser.setFileFilter(jpeg);
+//      else if(CURRENT_FILE.endsWith(".gif"))
+//	  chooser.setFileFilter(gif);
+//      else if(CURRENT_FILE.endsWith(".gifa"))
+//	chooser.setFileFilter(gifa);
+//      else if(CURRENT_FILE.endsWith(".tpt"))
+//	chooser.setFileFilter(tpt);
+//      else
+//	  chooser.setFileFilter(bmp);
 
       chooser.showSaveDialog(this);
       File saveFile = chooser.getSelectedFile();
