@@ -7229,7 +7229,7 @@ public static BufferedImage getIcon(File f)
 	      if((!saveFile.getName().endsWith(".jpeg"))
 	      &&(!saveFile.getName().endsWith(".jpg"))){
 		  //They don't have the extension
-		  saveFile = new File(saveFile.getAbsolutePath()+".jpeg");
+		  saveFile = new File(saveFile.getAbsolutePath()+".jpg");
 	      }
 	      try{
 		  FileOutputStream fos = new FileOutputStream(saveFile.getAbsolutePath());
