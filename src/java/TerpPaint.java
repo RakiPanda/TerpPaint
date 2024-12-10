@@ -5818,6 +5818,8 @@ if(center.main_image.getWidth()*8*center.main_image.getHeight()*8<9000000){
 	chooser.addChoosableFileFilter(gif);
 	chooser.addChoosableFileFilter(jpeg);
 	chooser.addChoosableFileFilter(bmp);
+	// デフォルトのファイルフィルタをJPEGに設定
+	chooser.setFileFilter(jpeg);
 	chooser.showOpenDialog(this);
 	File chosen = chooser.getSelectedFile();
 
