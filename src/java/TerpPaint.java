@@ -871,15 +871,15 @@ public class TerpPaint extends javax.swing.JFrame {
 	File1.add(Open);
 
 //	Save.setText("Save");
-	Save.setText("保存");
-	Save.setMnemonic(KeyEvent.VK_S);
-	Save.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_S, ActionEvent.CTRL_MASK));
-	Save.addActionListener(new java.awt.event.ActionListener() {
-	    public void actionPerformed(java.awt.event.ActionEvent evt) {
-		SaveActionPerformed(evt);
-	    }
-	});
-	File1.add(Save);
+//	Save.setText("保存");
+//	Save.setMnemonic(KeyEvent.VK_S);
+//	Save.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_S, ActionEvent.CTRL_MASK));
+//	Save.addActionListener(new java.awt.event.ActionListener() {
+//	    public void actionPerformed(java.awt.event.ActionEvent evt) {
+//		SaveActionPerformed(evt);
+//	    }
+//	});
+//	File1.add(Save);
 
 //	SaveAs.setText("Save As...");
 	SaveAs.setText("名前を付けて保存");
